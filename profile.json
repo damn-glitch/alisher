@@ -1,0 +1,103 @@
+{
+  "name": "Alisher Beisembekov",
+  "headline": "Polymath • Innovator • Visionary",
+  "about": "Brief summary about you. Upload PDF/JSON to overwrite.",
+  "contacts": {},
+  "socials": {},
+  "skills": {
+    "Technology": [
+      "AI/ML",
+      "Python",
+      "Cloud"
+    ],
+    "Leadership": [
+      "Strategy",
+      "Product",
+      "Mentorship"
+    ],
+    "Research": [
+      "Publications",
+      "Patents"
+    ]
+  },
+  "languages": [
+    "Русский",
+    "Казахский",
+    "English"
+  ],
+  "positions_current": [],
+  "career": [],
+  "projects": [],
+  "research_areas": [],
+  "publications": [],
+  "awards": [],
+  "achievements_other": [],
+  "analytics": {
+    "growth": {
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "projects": [
+        2,
+        4,
+        7,
+        12,
+        18,
+        24
+      ],
+      "publications": [
+        0,
+        1,
+        3,
+        6,
+        9,
+        12
+      ],
+      "team_size": [
+        1,
+        3,
+        6,
+        10,
+        15,
+        22
+      ]
+    },
+    "skills_distribution": {
+      "AI/ML": 80,
+      "Cloud": 70,
+      "Leadership": 75,
+      "Research": 65
+    },
+    "lifetime_stats": [
+      [
+        "Patents",
+        "—",
+        "📋",
+        ""
+      ],
+      [
+        "Publications",
+        "—",
+        "📚",
+        ""
+      ],
+      [
+        "Projects",
+        "—",
+        "💡",
+        ""
+      ],
+      [
+        "Awards",
+        "—",
+        "🏆",
+        ""
+      ]
+    ]
+  }
+}
