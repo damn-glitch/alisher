@@ -437,10 +437,10 @@ if st.session_state.current_page == 'home':
         positions = [
             {
                 "title": "Co-Founder",
-                "company": "Carso.kz",
+                "company": "Avtovin.kz",
                 "period": "May 2025 - Present",
                 "description": "Revolutionizing automotive warranty and service delivery through technology-driven solutions across Kazakhstan",
-                "website": "https://carso.kz"
+                "website": "https://avtovin.kz/"
             },
             {
                 "title": "Chief Information Officer",
@@ -457,7 +457,7 @@ if st.session_state.current_page == 'home':
                 "website": None
             },
             {
-                "title": "Chief Information Officer",
+                "title": "Chief Information Officer & Co-Founder",
                 "company": "JASAIM",
                 "period": "Feb 2024 - Present",
                 "description": "Driving technology innovation in educational and philanthropic sectors",
@@ -1195,3 +1195,4 @@ st.markdown("""
     </div>
 </div>
 """, unsafe_allow_html=True)
+
