@@ -282,6 +282,30 @@ def load_css():
             background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
         }
 
+        /* Company Links */
+        .company-link {
+            color: inherit;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .company-link:hover {
+            text-shadow: 0 0 10px rgba(102, 126, 234, 0.8);
+            transform: translateX(3px);
+        }
+
+        .company-link:after {
+            content: ' 🔗';
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            font-size: 0.8em;
+        }
+
+        .company-link:hover:after {
+            opacity: 0.7;
+        }
+
         /* Text Styles */
         .text-gradient {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -415,33 +439,43 @@ if st.session_state.current_page == 'home':
                 "title": "Co-Founder",
                 "company": "Carso.kz",
                 "period": "May 2025 - Present",
-                "description": "Revolutionizing automotive warranty and service delivery through technology-driven solutions across Kazakhstan"
+                "description": "Revolutionizing automotive warranty and service delivery through technology-driven solutions across Kazakhstan",
+                "website": "https://carso.kz"
             },
             {
                 "title": "Chief Information Officer",
                 "company": "Aleem",
                 "period": "Mar 2025 - Present",
-                "description": "Leading AI-powered EdTech and Web3 language learning platform development"
+                "description": "Leading AI-powered EdTech and Web3 language learning platform development",
+                "website": None
             },
             {
                 "title": "Chief Executive Officer & Founder",
                 "company": "Infinitum Intelligence",
                 "period": "Oct 2023 - Present",
-                "description": "Building AI, blockchain, and computer vision solutions for healthcare, finance, and urban planning"
+                "description": "Building AI, blockchain, and computer vision solutions for healthcare, finance, and urban planning",
+                "website": None
             },
             {
                 "title": "Chief Information Officer",
                 "company": "JASAIM",
                 "period": "Feb 2024 - Present",
-                "description": "Driving technology innovation in educational and philanthropic sectors"
+                "description": "Driving technology innovation in educational and philanthropic sectors",
+                "website": None
             }
         ]
 
         for position in positions:
+            # Create company name with optional link
+            if position.get("website"):
+                company_html = f'<a href="{position["website"]}" target="_blank" class="company-link text-gradient" style="font-weight: 600;">{position["company"]}</a>'
+            else:
+                company_html = f'<span class="text-gradient" style="font-weight: 600;">{position["company"]}</span>'
+                
             st.markdown(f"""
             <div class="achievement-card">
                 <h4 class="text-white">{position["title"]}</h4>
-                <p class="text-gradient" style="font-weight: 600;">{position["company"]}</p>
+                <p>{company_html}</p>
                 <p class="text-muted">{position["period"]}</p>
                 <p class="text-white" style="margin-top: 10px;">{position["description"]}</p>
             </div>
@@ -536,6 +570,12 @@ elif st.session_state.current_page == 'career':
 
     for i, position in enumerate(positions):
         color = "#667eea" if i < 3 else "#764ba2"
+        # Create company name with optional link
+        if position.get("website"):
+            company_html = f'<a href="{position["website"]}" target="_blank" class="company-link text-gradient" style="font-weight: 600; font-size: 1.1rem;">{position["company"]}</a>'
+        else:
+            company_html = f'<span class="text-gradient" style="font-weight: 600; font-size: 1.1rem;">{position["company"]}</span>'
+            
         st.markdown(f'''
         <div class="achievement-card">
             <div style="display: flex; align-items: start; gap: 20px;">
@@ -546,7 +586,7 @@ elif st.session_state.current_page == 'career':
                 </div>
                 <div style="flex: 1;">
                     <h3 class="text-white">{position["title"]}</h3>
-                    <p class="text-gradient" style="font-weight: 600; font-size: 1.1rem;">{position["company"]}</p>
+                    <p class="text-gradient" style="font-weight: 600; font-size: 1.1rem;">{company_html}</p>
                     <p class="text-muted">{position["period"]}</p>
                     <p class="text-white" style="margin: 15px 0;">{position["description"]}</p>
                     <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px;">
