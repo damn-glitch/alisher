@@ -3,6 +3,8 @@ from datetime import datetime
 import plotly.graph_objects as go
 import plotly.express as px
 import pandas as pd
+import json
+import os
 
 # Page Configuration
 st.set_page_config(
@@ -12,112 +14,186 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# Load profile data from JSON
+@st.cache_data
+def load_profile_data():
+    profile_path = os.path.join(os.path.dirname(__file__), 'profile.json')
+    with open(profile_path, 'r', encoding='utf-8') as f:
+        return json.load(f)
+
+profile_data = load_profile_data()
+
 # Initialize session state
 if 'current_page' not in st.session_state:
     st.session_state.current_page = 'home'
+
+
+# Achievement Categories - keywords for classification
+CATEGORY_KEYWORDS = {
+    "Sports": [
+        "boxing", "biceps", "curl", "powerlifting", "martial", "muai thai", "hand-to-hand",
+        "fighting", "sport", "IPC", "NPA", "IPAF", "asia cup", "champion", "titans"
+    ],
+    "Science": [
+        "astronomy", "astrophysics", "IAAC", "physics", "chemistry", "biology", "math",
+        "IYMC", "lomonosov", "electron", "experimental", "kolmogorov", "biotechnology"
+    ],
+    "Technology": [
+        "google", "microsoft", "hackathon", "hackerrank", "hashcode", "codejam",
+        "kickstart", "yandex", "data challenge", "AI", "zaintech", "programming", "code"
+    ],
+    "Entrepreneurship": [
+        "ICE24", "united nations", "startup", "carso", "choice of country", "payit",
+        "digital bridge", "business"
+    ],
+    "Academic": [
+        "dean's list", "research scholar", "undergraduate", "RIT", "ambassador"
+    ],
+    "Chess": [
+        "chess", "arena", "FIDE", "master", "candidate", "legends"
+    ]
+}
+
+def categorize_award(title):
+    """Categorize an award based on keywords in its title."""
+    title_lower = title.lower()
+    for category, keywords in CATEGORY_KEYWORDS.items():
+        for keyword in keywords:
+            if keyword.lower() in title_lower:
+                return category
+    return "Extra"
+
+def get_categorized_awards():
+    """Get all awards categorized by area."""
+    categories = {
+        "Sports": [],
+        "Science": [],
+        "Technology": [],
+        "Entrepreneurship": [],
+        "Academic": [],
+        "Chess": [],
+        "Extra": []
+    }
+
+    for award in profile_data.get('honors_and_awards', []):
+        category = categorize_award(award.get('title', ''))
+        categories[category].append(award)
+
+    return categories
 
 
 # Advanced Post-Modern CSS Design
 def load_css():
     st.markdown("""
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap');
 
         /* Global Styles */
         * {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Outfit', 'Inter', sans-serif;
         }
 
         .stApp {
-            background: linear-gradient(135deg, #0F0C29 0%, #302B63 50%, #24243e 100%);
+            background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 25%, #16213e 50%, #0f3460 75%, #1a1a2e 100%);
             background-attachment: fixed;
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
         }
 
-        /* Hide Streamlit Branding */
-        #MainMenu {visibility: hidden;}
-        footer {visibility: hidden;}
-
-        /* Sidebar Styling */
-        section[data-testid="stSidebar"] {
-            background: rgba(15, 12, 41, 0.8);
-            backdrop-filter: blur(20px);
-            border-right: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        section[data-testid="stSidebar"] .stButton > button {
-            background: rgba(255, 255, 255, 0.05);
-            color: rgba(255, 255, 255, 0.9);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 15px;
-            padding: 15px;
-            width: 100%;
-            transition: all 0.3s ease;
-            font-weight: 500;
-            margin-bottom: 10px;
-        }
-
-        section[data-testid="stSidebar"] .stButton > button:hover {
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.3) 0%, rgba(118, 75, 162, 0.3) 100%);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            transform: translateX(5px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
-        }
-
-        /* Animated Background */
-        .animated-bg {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            background: linear-gradient(270deg, #0F0C29, #302B63, #24243e, #0F0C29);
-            background-size: 800% 800%;
-            animation: gradientShift 20s ease infinite;
-        }
-
-        @keyframes gradientShift {
+        @keyframes gradientBG {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
 
+        /* Hide Streamlit Branding */
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        header {visibility: hidden;}
+
+        /* Sidebar Styling */
+        section[data-testid="stSidebar"] {
+            background: linear-gradient(180deg, rgba(10, 10, 15, 0.95) 0%, rgba(26, 26, 46, 0.95) 100%);
+            backdrop-filter: blur(30px);
+            border-right: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        section[data-testid="stSidebar"] .stButton > button {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+            color: rgba(255, 255, 255, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 18px 20px;
+            width: 100%;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            font-weight: 500;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+            letter-spacing: 0.02em;
+        }
+
+        section[data-testid="stSidebar"] .stButton > button:hover {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(139, 92, 246, 0.15) 100%);
+            border: 1px solid rgba(139, 92, 246, 0.4);
+            transform: translateX(8px);
+            box-shadow: 0 8px 32px rgba(139, 92, 246, 0.2), inset 0 0 20px rgba(139, 92, 246, 0.05);
+        }
+
         /* Glassmorphism Cards */
         .glass-card {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 30px;
-            margin: 20px 0;
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-            transition: all 0.3s ease;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 32px;
+            margin: 24px 0;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3), inset 0 0 60px rgba(255, 255, 255, 0.02);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .glass-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.03), transparent);
+            transition: left 0.7s ease;
+        }
+
+        .glass-card:hover::before {
+            left: 100%;
         }
 
         .glass-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px 0 rgba(31, 38, 135, 0.5);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(139, 92, 246, 0.15), inset 0 0 60px rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(139, 92, 246, 0.3);
         }
 
         /* Hero Section */
         .hero-name {
             font-family: 'Space Grotesk', sans-serif;
-            font-size: clamp(3rem, 8vw, 6rem);
+            font-size: clamp(3.5rem, 10vw, 7rem);
             font-weight: 700;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 20%, #f093fb 40%, #f5576c 60%, #fda085 80%, #667eea 100%);
-            background-size: 200% 200%;
+            background: linear-gradient(135deg, #818cf8 0%, #a78bfa 25%, #c4b5fd 50%, #f0abfc 75%, #818cf8 100%);
+            background-size: 300% 300%;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            background-clip: text;
             text-align: center;
-            animation: gradientText 5s ease infinite;
-            letter-spacing: -0.02em;
+            animation: shimmer 4s ease infinite;
+            letter-spacing: -0.03em;
             line-height: 1.1;
             margin-bottom: 0;
+            text-shadow: 0 0 80px rgba(139, 92, 246, 0.5);
         }
 
-        @keyframes gradientText {
+        @keyframes shimmer {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
@@ -125,46 +201,69 @@ def load_css():
 
         .hero-title {
             font-family: 'Space Grotesk', sans-serif;
-            font-size: clamp(1.2rem, 3vw, 1.8rem);
-            color: rgba(255, 255, 255, 0.9);
+            font-size: clamp(1rem, 2.5vw, 1.5rem);
+            color: rgba(255, 255, 255, 0.7);
             text-align: center;
-            margin-top: 10px;
-            letter-spacing: 0.2em;
+            margin-top: 16px;
+            letter-spacing: 0.3em;
             text-transform: uppercase;
             font-weight: 300;
         }
 
         /* Metric Cards */
         .metric-card {
-            background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
-            backdrop-filter: blur(10px);
-            border-radius: 16px;
-            padding: 25px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 28px;
             text-align: center;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .metric-card::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .metric-card:hover::after {
+            opacity: 1;
         }
 
         .metric-card:hover {
-            transform: translateY(-5px) scale(1.02);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transform: translateY(-8px) scale(1.02);
+            border: 1px solid rgba(139, 92, 246, 0.4);
+            box-shadow: 0 20px 50px rgba(139, 92, 246, 0.2);
         }
 
         .metric-number {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             font-weight: 700;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #818cf8 0%, #c4b5fd 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
+            position: relative;
+            z-index: 1;
         }
 
         .metric-label {
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.85rem;
             text-transform: uppercase;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.15em;
+            font-weight: 500;
+            position: relative;
+            z-index: 1;
         }
 
         /* Section Headers */
@@ -172,12 +271,12 @@ def load_css():
             font-family: 'Space Grotesk', sans-serif;
             font-size: clamp(2rem, 4vw, 3rem);
             font-weight: 600;
-            background: linear-gradient(135deg, #fff 0%, rgba(255,255,255,0.7) 100%);
+            background: linear-gradient(135deg, #fff 0%, rgba(255, 255, 255, 0.8) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin: 40px 0 30px 0;
+            margin: 48px 0 32px 0;
             position: relative;
-            padding-bottom: 15px;
+            padding-bottom: 16px;
         }
 
         .section-header:after {
@@ -185,67 +284,130 @@ def load_css():
             position: absolute;
             bottom: 0;
             left: 0;
-            width: 100px;
-            height: 3px;
-            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #818cf8 0%, #c4b5fd 50%, transparent 100%);
             border-radius: 2px;
         }
 
         /* Achievement Cards */
         .achievement-card {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(10px);
-            border-radius: 16px;
-            padding: 25px;
-            margin-bottom: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.01) 100%);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 24px;
+            margin-bottom: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
             overflow: hidden;
         }
 
-        .achievement-card:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
-            transition: left 0.5s ease;
-        }
-
-        .achievement-card:hover:before {
-            left: 100%;
-        }
-
         .achievement-card:hover {
+            transform: translateX(8px);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            box-shadow: 0 10px 40px rgba(139, 92, 246, 0.15);
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+        }
+
+        /* Category Cards */
+        .category-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+            backdrop-filter: blur(15px);
+            border-radius: 24px;
+            padding: 28px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(139, 92, 246, 0.2);
+        }
+
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .category-icon {
+            font-size: 2.5rem;
+            filter: drop-shadow(0 0 20px rgba(139, 92, 246, 0.5));
+        }
+
+        .category-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            background: linear-gradient(135deg, #fff 0%, rgba(255, 255, 255, 0.8) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .category-count {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, rgba(99, 102, 241, 0.2) 100%);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #c4b5fd;
+            font-weight: 600;
+        }
+
+        /* Award Item */
+        .award-item {
+            padding: 16px;
+            margin: 10px 0;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 12px;
+            border-left: 3px solid rgba(139, 92, 246, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .award-item:hover {
+            background: rgba(139, 92, 246, 0.08);
+            border-left: 3px solid #a78bfa;
             transform: translateX(5px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .award-title {
+            color: rgba(255, 255, 255, 0.95);
+            font-weight: 500;
+            font-size: 0.95rem;
+            margin-bottom: 6px;
+        }
+
+        .award-meta {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.8rem;
         }
 
         /* Skills Grid */
         .skill-tag {
-            background: rgba(255, 255, 255, 0.05);
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(99, 102, 241, 0.1) 100%);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(139, 92, 246, 0.2);
             color: rgba(255, 255, 255, 0.9);
-            padding: 12px 20px;
-            border-radius: 25px;
+            padding: 10px 18px;
+            border-radius: 30px;
             text-align: center;
             font-weight: 500;
-            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             cursor: default;
             display: inline-block;
-            margin: 5px;
+            margin: 4px;
         }
 
         .skill-tag:hover {
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.25) 0%, rgba(99, 102, 241, 0.25) 100%);
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 25px rgba(139, 92, 246, 0.3);
+            border: 1px solid rgba(139, 92, 246, 0.5);
         }
 
         /* Floating Elements */
@@ -255,61 +417,37 @@ def load_css():
 
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
+            50% { transform: translateY(-15px); }
         }
 
         /* Glow Effect */
         .glow {
-            box-shadow: 0 0 30px rgba(102, 126, 234, 0.6),
-                        0 0 60px rgba(102, 126, 234, 0.4),
-                        0 0 90px rgba(102, 126, 234, 0.2);
+            box-shadow: 0 0 40px rgba(139, 92, 246, 0.4),
+                        0 0 80px rgba(139, 92, 246, 0.2),
+                        0 0 120px rgba(139, 92, 246, 0.1);
         }
 
         /* Custom Scrollbar */
         ::-webkit-scrollbar {
-            width: 10px;
+            width: 8px;
         }
 
         ::-webkit-scrollbar-track {
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(255, 255, 255, 0.02);
         }
 
         ::-webkit-scrollbar-thumb {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 5px;
+            background: linear-gradient(135deg, #818cf8 0%, #a78bfa 100%);
+            border-radius: 4px;
         }
 
         ::-webkit-scrollbar-thumb:hover {
-            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
-        }
-
-        /* Company Links */
-        .company-link {
-            color: inherit;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        .company-link:hover {
-            text-shadow: 0 0 10px rgba(102, 126, 234, 0.8);
-            transform: translateX(3px);
-        }
-
-        .company-link:after {
-            content: ' 🔗';
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            font-size: 0.8em;
-        }
-
-        .company-link:hover:after {
-            opacity: 0.7;
+            background: linear-gradient(135deg, #a78bfa 0%, #c4b5fd 100%);
         }
 
         /* Text Styles */
         .text-gradient {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #818cf8 0%, #c4b5fd 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -319,36 +457,108 @@ def load_css():
         }
 
         .text-muted {
-            color: rgba(255, 255, 255, 0.6);
+            color: rgba(255, 255, 255, 0.5);
         }
 
         /* Sidebar Header */
         .sidebar-header {
             color: white;
             text-align: center;
-            padding: 20px 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            margin-bottom: 20px;
+            padding: 24px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            margin-bottom: 24px;
         }
 
         .sidebar-name {
             font-family: 'Space Grotesk', sans-serif;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 600;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #818cf8 0%, #c4b5fd 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
         }
 
         .sidebar-title {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.85rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
+
+        /* Timeline */
+        .timeline-item {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 24px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 12px;
+            height: 12px;
+            background: linear-gradient(135deg, #818cf8 0%, #a78bfa 100%);
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 24px;
+            width: 2px;
+            height: calc(100% + 8px);
+            background: linear-gradient(180deg, rgba(139, 92, 246, 0.5) 0%, transparent 100%);
+        }
+
+        .timeline-item:last-child::after {
+            display: none;
+        }
+
+        /* Stats Counter Animation */
+        @keyframes countUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .stat-animated {
+            animation: countUp 0.6s ease-out forwards;
+        }
+
+        /* Pulse Animation */
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .pulse {
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        /* Tab Styles */
+        .stTabs [data-baseweb="tab-list"] {
+            gap: 8px;
+            background-color: transparent;
+        }
+
+        .stTabs [data-baseweb="tab"] {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
             color: rgba(255, 255, 255, 0.7);
-            font-size: 0.9rem;
-            letter-spacing: 0.1em;
+            padding: 12px 24px;
+        }
+
+        .stTabs [aria-selected="true"] {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, rgba(99, 102, 241, 0.2) 100%);
+            border: 1px solid rgba(139, 92, 246, 0.4);
+            color: white;
         }
     </style>
-
-    <div class="animated-bg"></div>
     """, unsafe_allow_html=True)
 
 
@@ -357,9 +567,9 @@ load_css()
 
 # Sidebar Navigation
 with st.sidebar:
-    st.markdown("""
+    st.markdown(f"""
     <div class="sidebar-header">
-        <div class="sidebar-name">Alisher Beisembekov</div>
+        <div class="sidebar-name">{profile_data.get('name', 'Alisher Beisembekov')}</div>
         <div class="sidebar-title">Portfolio Navigation</div>
     </div>
     """, unsafe_allow_html=True)
@@ -379,14 +589,14 @@ with st.sidebar:
         st.session_state.current_page = 'analytics'
 
     st.markdown("---")
-    st.markdown("""
+    st.markdown(f"""
     <div style="text-align: center; padding: 20px 0;">
-        <p style="color: rgba(255, 255, 255, 0.6); margin-bottom: 15px;">Connect</p>
-        <div style="display: flex; justify-content: center; gap: 15px;">
-            <a href="https://www.linkedin.com/in/alisher-beisembekov/" style="color: rgba(255, 255, 255, 0.7); text-decoration: none;">💼</a>
-            <a href="https://github.com/damn-glitch" style="color: rgba(255, 255, 255, 0.7); text-decoration: none;">💻</a>
-            <a href="https://www.smartr.me/me/alisher.beisembekov" style="color: rgba(255, 255, 255, 0.7); text-decoration: none;">🌐</a>
-            <a href="https://www.credly.com/users/alisher-beisembekov/badges" style="color: rgba(255, 255, 255, 0.7); text-decoration: none;">🏅</a>
+        <p style="color: rgba(255, 255, 255, 0.5); margin-bottom: 15px; font-size: 0.85rem; letter-spacing: 0.1em;">CONNECT</p>
+        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+            <a href="{profile_data.get('url', 'https://www.linkedin.com/in/alisher-beisembekov/')}" target="_blank" style="color: rgba(255, 255, 255, 0.6); text-decoration: none; font-size: 1.5rem; transition: all 0.3s ease;">💼</a>
+            <a href="https://github.com/damn-glitch" target="_blank" style="color: rgba(255, 255, 255, 0.6); text-decoration: none; font-size: 1.5rem; transition: all 0.3s ease;">💻</a>
+            <a href="https://www.smartr.me/me/alisher.beisembekov" target="_blank" style="color: rgba(255, 255, 255, 0.6); text-decoration: none; font-size: 1.5rem; transition: all 0.3s ease;">🌐</a>
+            <a href="https://www.credly.com/users/alisher-beisembekov/badges" target="_blank" style="color: rgba(255, 255, 255, 0.6); text-decoration: none; font-size: 1.5rem; transition: all 0.3s ease;">🏅</a>
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -394,24 +604,31 @@ with st.sidebar:
 # Page content based on selection
 if st.session_state.current_page == 'home':
     # Hero Section
-    st.markdown('<h1 class="hero-name floating">Alisher Beisembekov</h1>', unsafe_allow_html=True)
-    st.markdown('<p class="hero-title">Polymath • Tech Innovator • Visionary Leader</p>', unsafe_allow_html=True)
+    st.markdown(f'<h1 class="hero-name floating">{profile_data.get("name", "Alisher Beisembekov")}</h1>', unsafe_allow_html=True)
+    st.markdown('<p class="hero-title">Polymath • Tech Innovator • World Record Holder</p>', unsafe_allow_html=True)
 
-    # Quick Stats
+    # Quick Stats from profile data
     st.markdown("---")
     cols = st.columns(4)
+
+    # Calculate stats from profile
+    total_awards = len(profile_data.get('honors_and_awards', []))
+    total_projects = len([p for p in profile_data.get('projects', []) if p.get('name')])
+    total_certs = len(profile_data.get('certifications', []))
+    total_publications = len(profile_data.get('publications', []))
+
     metrics = [
-        ("Patents", "12+", "📋"),
-        ("Publications", "3", "📚"),
-        ("Projects", "45+", "💡"),
-        ("Awards", "80+", "🏆")
+        ("Awards", f"{total_awards}+", "🏆"),
+        ("Projects", f"{total_projects}+", "💡"),
+        ("Certifications", f"{total_certs}+", "🎓"),
+        ("Publications", f"{total_publications}", "📚")
     ]
 
     for col, (label, value, icon) in zip(cols, metrics):
         with col:
             st.markdown(f"""
             <div class="metric-card">
-                <div style="font-size: 2rem; margin-bottom: 10px;">{icon}</div>
+                <div style="font-size: 2.5rem; margin-bottom: 12px; filter: drop-shadow(0 0 10px rgba(139, 92, 246, 0.5));">{icon}</div>
                 <div class="metric-number">{value}</div>
                 <div class="metric-label">{label}</div>
             </div>
@@ -425,96 +642,67 @@ if st.session_state.current_page == 'home':
 
     with col1:
         st.markdown("""
-        <p class="text-white" style="font-size: 1.1rem; line-height: 1.8;">
-        Pioneering the intersection of technology, innovation, and human potential. Building revolutionary 
-        solutions across AI, blockchain, quantum computing, and beyond. Leading multiple companies while 
+        <p class="text-white" style="font-size: 1.1rem; line-height: 1.9; margin-bottom: 24px;">
+        Pioneering the intersection of technology, innovation, and human potential. Building revolutionary
+        solutions across AI, blockchain, quantum computing, and beyond. Leading multiple companies while
         pushing the boundaries of what's possible in computer vision, autonomous systems, and intelligent platforms.
         </p>
         """, unsafe_allow_html=True)
 
-        # Current Positions
-        st.markdown('<h3 class="text-gradient" style="margin-top: 30px;">Current Leadership Roles</h3>',
+        # Current Positions from profile.json
+        st.markdown('<h3 class="text-gradient" style="margin-top: 30px; font-size: 1.4rem;">Current Leadership Roles</h3>',
                     unsafe_allow_html=True)
 
-        positions = [
-            {
-                "title": "Co-Founder",
-                "company": "Avtovin.kz",
-                "period": "May 2025 - Present",
-                "description": "Revolutionizing automotive warranty and service delivery through technology-driven solutions across Kazakhstan",
-                "website": "https://avtovin.kz/"
-            },
-            {
-                "title": "Chief Information Officer",
-                "company": "Aleem",
-                "period": "Mar 2025 - Present",
-                "description": "Leading AI-powered EdTech and Web3 language learning platform development",
-                "website": None
-            },
-            {
-                "title": "Chief Executive Officer & Founder",
-                "company": "Infinitum Intelligence",
-                "period": "Oct 2023 - Present",
-                "description": "Building AI, blockchain, and computer vision solutions for healthcare, finance, and urban planning",
-                "website": None
-            },
-            {
-                "title": "Chief Information Officer & Co-Founder",
-                "company": "JASAIM",
-                "period": "Feb 2024 - Present",
-                "description": "Driving technology innovation in educational and philanthropic sectors",
-                "website": None
-            }
-        ]
+        # Get current positions (positions with "Present" in end_date)
+        current_positions = []
+        for exp in profile_data.get('experience', []):
+            if exp.get('date', {}).get('end_date') == 'Present' and exp.get('title'):
+                current_positions.append(exp)
 
-        for position in positions:
-            # Create company name with optional link
-            if position.get("website"):
-                company_html = f'<a href="{position["website"]}" target="_blank" class="company-link text-gradient" style="font-weight: 600;">{position["company"]}</a>'
-            else:
-                company_html = f'<span class="text-gradient" style="font-weight: 600;">{position["company"]}</span>'
+        for position in current_positions[:4]:  # Show top 4 current positions
+            company = position.get('company_name', '')
+            title = position.get('title', '')
+            start_date = position.get('date', {}).get('start_date', '')
+            description = position.get('description', '')
+
+            # Clean HTML from description
+            if description:
+                import re
+                description = re.sub('<[^<]+?>', ' ', description)
+                description = description[:200] + '...' if len(description) > 200 else description
 
             st.markdown(f"""
             <div class="achievement-card">
-                <h4 class="text-white">{position["title"]}</h4>
-                <p>{company_html}</p>
-                <p class="text-muted">{position["period"]}</p>
-                <p class="text-white" style="margin-top: 10px;">{position["description"]}</p>
+                <h4 class="text-white" style="margin-bottom: 8px; font-size: 1.1rem;">{title}</h4>
+                <p class="text-gradient" style="font-weight: 600; margin-bottom: 4px;">{company}</p>
+                <p class="text-muted" style="font-size: 0.85rem; margin-bottom: 12px;">{start_date} - Present</p>
+                <p class="text-white" style="font-size: 0.9rem; line-height: 1.6; opacity: 0.8;">{description}</p>
             </div>
             """, unsafe_allow_html=True)
 
     with col2:
-        # Core Expertise
-        st.markdown('<h3 class="text-gradient">Core Expertise</h3>', unsafe_allow_html=True)
+        # Languages from profile.json
+        st.markdown('<h3 class="text-gradient" style="font-size: 1.2rem;">Languages</h3>', unsafe_allow_html=True)
+        for lang in profile_data.get('languages', []):
+            proficiency = lang.get('description', '')
+            st.markdown(f'''
+            <div class="skill-tag" style="display: block; margin: 8px 0;">
+                {lang.get('name', '')}
+                <span style="font-size: 0.75rem; opacity: 0.7;">({proficiency.split()[0] if proficiency else ''})</span>
+            </div>
+            ''', unsafe_allow_html=True)
 
-        expertise = {
-            "AI & Technology": ["Machine Learning", "Computer Vision", "Blockchain", "Quantum Computing"],
-            "Leadership": ["Strategic Planning", "Team Building", "Innovation", "R&D Management"],
-            "Research": ["Patents", "Publications", "Speaking", "Mentorship"]
-        }
-
-        for category, skills in expertise.items():
-            st.markdown(f'<p class="text-white" style="font-weight: 600; margin-top: 20px;">{category}</p>',
-                        unsafe_allow_html=True)
-            for skill in skills:
-                st.markdown(f'<div class="skill-tag">{skill}</div>', unsafe_allow_html=True)
-
-        # Languages
-        st.markdown('<h3 class="text-gradient" style="margin-top: 30px;">Languages</h3>', unsafe_allow_html=True)
-        languages = ["English (Native)", "Russian (Native)", "Kazakh (Native)", "French", "Turkish", "Ukrainian"]
-        for lang in languages:
-            st.markdown(f'<div class="skill-tag" style="margin: 5px 0;">{lang}</div>', unsafe_allow_html=True)
-
-        # Education
-        st.markdown('<h3 class="text-gradient" style="margin-top: 30px;">Education</h3>', unsafe_allow_html=True)
-        st.markdown("""
-        <div class="achievement-card">
-            <h4 class="text-white">Bachelor's Degree</h4>
-            <p class="text-gradient">Mathematics and Computer Science</p>
-            <p class="text-muted">Rochester Institute of Technology, Dubai</p>
-            <p class="text-muted">2020 - 2024 | Magna Cum Laude</p>
-        </div>
-        """, unsafe_allow_html=True)
+        # Education from profile.json
+        st.markdown('<h3 class="text-gradient" style="margin-top: 30px; font-size: 1.2rem;">Education</h3>', unsafe_allow_html=True)
+        for edu in profile_data.get('education', [])[:2]:
+            st.markdown(f"""
+            <div class="achievement-card">
+                <h4 class="text-white" style="font-size: 0.95rem;">{edu.get('degree', '')}</h4>
+                <p class="text-gradient" style="font-weight: 500; font-size: 0.9rem;">{edu.get('major', '')}</p>
+                <p class="text-muted" style="font-size: 0.8rem;">{edu.get('university_name', '')}</p>
+                <p class="text-muted" style="font-size: 0.75rem;">{edu.get('date', {}).get('start_date', '')} - {edu.get('date', {}).get('end_date', '')}</p>
+            </div>
+            """, unsafe_allow_html=True)
 
     st.markdown('</div>', unsafe_allow_html=True)
 
@@ -522,237 +710,82 @@ elif st.session_state.current_page == 'career':
     st.markdown('<h1 class="hero-name">Career Journey</h1>', unsafe_allow_html=True)
     st.markdown('<p class="hero-title">Professional Evolution & Leadership</p>', unsafe_allow_html=True)
 
-    positions = [
-        {
-            "title": "Co-Founder",
-            "company": "Carso.kz",
-            "period": "May 2025 - Present",
-            "description": "Leading automotive technology revolution in Kazakhstan",
-            "achievements": ["Proprietary mobile/web applications", "Strategic partnerships",
-                             "Market leadership positioning"]
-        },
-        {
-            "title": "Chief Information Officer",
-            "company": "Aleem",
-            "period": "Mar 2025 - Present",
-            "description": "Revolutionary AI-powered language learning platform",
-            "achievements": ["Web3 tokenomics integration", "AI-driven personalization", "Global market expansion"]
-        },
-        {
-            "title": "Chief Executive Officer & Founder",
-            "company": "Infinitum Intelligence",
-            "period": "Oct 2023 - Present",
-            "description": "Building the future of AI and blockchain technology",
-            "achievements": ["9 flagship platforms delivered", "Multiple patents secured", "Global partnerships"]
-        },
-        {
-            "title": "Lead Developer",
-            "company": "IBM",
-            "period": "May 2023 - Sep 2023",
-            "description": "Advanced AI research and development",
-            "achievements": ["AutoAI-for-Text optimization", "Benchmark infrastructure", "Performance improvements"]
-        },
-        {
-            "title": "Senior Machine Learning Engineer",
-            "company": "Google",
-            "period": "Apr 2022 - Aug 2022",
-            "description": "Real-time fraud detection and Google Translate enhancement",
-            "achievements": ["30% fraud loss reduction", "15% BLEU score improvement", "Billions of events processed"]
-        },
-        {
-            "title": "Senior Developer Python/C++",
-            "company": "Yandex",
-            "period": "Mar 2021 - Jun 2021",
-            "description": "Yandex.Taxi platform upgrades and architecture",
-            "achievements": ["99.9% uptime maintained", "25% API performance improvement", "Team mentorship"]
-        }
-    ]
-
     st.markdown('<div class="glass-card">', unsafe_allow_html=True)
     st.markdown('<h2 class="section-header">Professional Timeline</h2>', unsafe_allow_html=True)
 
-    for i, position in enumerate(positions):
-        color = "#667eea" if i < 3 else "#764ba2"
-        # Create company name with optional link
-        if position.get("website"):
-            company_html = f'<a href="{position["website"]}" target="_blank" class="company-link text-gradient" style="font-weight: 600; font-size: 1.1rem;">{position["company"]}</a>'
-        else:
-            company_html = f'<span class="text-gradient" style="font-weight: 600; font-size: 1.1rem;">{position["company"]}</span>'
+    # Get all experience from profile.json
+    for i, exp in enumerate(profile_data.get('experience', [])):
+        if not exp.get('title') or exp.get('title') == exp.get('company_name'):
+            continue
+
+        title = exp.get('title', '')
+        company = exp.get('company_name', '')
+        start_date = exp.get('date', {}).get('start_date', '')
+        end_date = exp.get('date', {}).get('end_date', 'Present')
+        description = exp.get('description', '')
+        location = exp.get('location', '')
+
+        # Clean HTML from description
+        if description:
+            import re
+            description = re.sub('<[^<]+?>', ' ', description)
+            description = description[:400] + '...' if len(description) > 400 else description
+
+        period = f"{start_date} - {end_date}" if start_date else ""
 
         st.markdown(f'''
         <div class="achievement-card">
             <div style="display: flex; align-items: start; gap: 20px;">
-                <div style="min-width: 60px; height: 60px; background: linear-gradient(135deg, {color} 0%, #764ba2 100%); 
-                            border-radius: 15px; display: flex; align-items: center; justify-content: center; color: white; 
-                            font-weight: bold; font-size: 1.5rem;">
+                <div style="min-width: 50px; height: 50px; background: linear-gradient(135deg, #818cf8 0%, #a78bfa 100%);
+                            border-radius: 14px; display: flex; align-items: center; justify-content: center; color: white;
+                            font-weight: bold; font-size: 1.2rem; box-shadow: 0 8px 25px rgba(139, 92, 246, 0.3);">
                     {i + 1}
                 </div>
                 <div style="flex: 1;">
-                    <h3 class="text-white">{position["title"]}</h3>
-                    <p class="text-gradient" style="font-weight: 600; font-size: 1.1rem;">{company_html}</p>
-                    <p class="text-muted">{position["period"]}</p>
-                    <p class="text-white" style="margin: 15px 0;">{position["description"]}</p>
-                    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px;">
-                        {"".join([f'<span class="skill-tag">{achievement}</span>' for achievement in position["achievements"]])}
-                    </div>
+                    <h3 class="text-white" style="margin-bottom: 6px; font-size: 1.15rem;">{title}</h3>
+                    <p class="text-gradient" style="font-weight: 600; font-size: 1rem; margin-bottom: 4px;">{company}</p>
+                    <p class="text-muted" style="font-size: 0.85rem;">{period} {f"• {location}" if location else ""}</p>
+                    <p class="text-white" style="margin-top: 12px; font-size: 0.9rem; line-height: 1.7; opacity: 0.85;">{description}</p>
                 </div>
             </div>
         </div>
         ''', unsafe_allow_html=True)
 
     st.markdown('</div>', unsafe_allow_html=True)
-
-    # Career Stats
-    st.markdown('<h2 class="section-header">Career Impact</h2>', unsafe_allow_html=True)
-    col1, col2, col3, col4 = st.columns(4)
-
-    stats = [
-        ("Years Experience", "6+", "⏰"),
-        ("Companies Led", "4", "🏢"),
-        ("Major Projects", "45+", "🚀"),
-        ("Team Members", "200+", "👥")
-    ]
-
-    for col, (label, value, icon) in zip([col1, col2, col3, col4], stats):
-        with col:
-            st.markdown(f'''
-            <div class="metric-card glow">
-                <div style="font-size: 2.5rem;">{icon}</div>
-                <div class="metric-number">{value}</div>
-                <div class="metric-label">{label}</div>
-            </div>
-            ''', unsafe_allow_html=True)
 
 elif st.session_state.current_page == 'research':
-    st.markdown('<h1 class="hero-name">Research & Innovation</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="hero-name">Research & Publications</h1>', unsafe_allow_html=True)
     st.markdown('<p class="hero-title">Advancing the Frontiers of Knowledge</p>', unsafe_allow_html=True)
 
-    # Research Areas
+    # Publications from profile.json
     st.markdown('<div class="glass-card">', unsafe_allow_html=True)
-    st.markdown('<h2 class="section-header">Research Domains</h2>', unsafe_allow_html=True)
+    st.markdown('<h2 class="section-header">Publications</h2>', unsafe_allow_html=True)
 
-    research_areas = [
-        {
-            "area": "Artificial Intelligence & Machine Learning",
-            "icon": "🧠",
-            "focus": "Computer Vision, Deep Learning, Natural Language Processing, AutoML",
-            "papers": 2,
-            "patents": 8
-        },
-        {
-            "area": "Blockchain & Distributed Systems",
-            "icon": "🔗",
-            "focus": "Smart Contracts, DeFi, Consensus Mechanisms, Decentralized Applications",
-            "papers": 0,
-            "patents": 4
-        },
-        {
-            "area": "Computer Vision & Autonomous Systems",
-            "icon": "👁️",
-            "focus": "Real-time Processing, Object Detection, Autonomous Navigation",
-            "papers": 1,
-            "patents": 3
-        },
-        {
-            "area": "Network Optimization & 5G/6G",
-            "icon": "📡",
-            "focus": "Speed Optimization, Edge Computing, Predictive Analytics",
-            "papers": 0,
-            "patents": 2
-        }
-    ]
-
-    cols = st.columns(2)
-    for i, area in enumerate(research_areas):
-        with cols[i % 2]:
-            st.markdown(f'''
-            <div class="achievement-card">
-                <div style="text-align: center;">
-                    <div style="font-size: 4rem; margin-bottom: 15px;">{area["icon"]}</div>
-                    <h3 class="text-gradient">{area["area"]}</h3>
-                    <p class="text-white" style="margin: 15px 0;">{area["focus"]}</p>
-                    <div style="display: flex; justify-content: space-around; margin-top: 20px;">
-                        <div>
-                            <p class="metric-number" style="font-size: 1.8rem;">{area["papers"]}</p>
-                            <p class="text-muted">Papers</p>
-                        </div>
-                        <div>
-                            <p class="metric-number" style="font-size: 1.8rem;">{area["patents"]}</p>
-                            <p class="text-muted">Patents</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            ''', unsafe_allow_html=True)
-
-    st.markdown('</div>', unsafe_allow_html=True)
-
-    # Publications
-    st.markdown('<div class="glass-card">', unsafe_allow_html=True)
-    st.markdown('<h2 class="section-header">Key Publications</h2>', unsafe_allow_html=True)
-
-    publications = [
-        {
-            "title": "Study of the hydrocarbon-oxidizing activity of Bacillus subtillus on different substrates",
-            "journal": "MSI",
-            "year": 2017,
-            "citations": "N/A",
-            "description": "Bioremediation research using native microorganisms for oil pollution in Kazakhstan"
-        },
-        {
-            "title": "Detecting Various Writing Styles in Documents Through Inherent Stylometric Analysis",
-            "journal": "IEEE",
-            "year": 2023,
-            "citations": "N/A",
-            "description": "K-Means clustering approach for detecting plagiarism and multiple writing styles"
-        },
-        {
-            "title": "IoT and AI Applications for Healthcare Diagnostics",
-            "journal": "IEEE",
-            "year": 2023,
-            "citations": "N/A",
-            "description": "Comprehensive report on IoT/AI integration for sustainable healthcare systems"
-        }
-    ]
-
-    for pub in publications:
+    for pub in profile_data.get('publications', []):
         st.markdown(f'''
         <div class="achievement-card">
-            <h3 class="text-white">{pub["title"]}</h3>
-            <p class="text-gradient" style="font-weight: 600; margin: 10px 0;">{pub["journal"]} • {pub["year"]}</p>
-            <p class="text-white" style="margin: 15px 0;">{pub["description"]}</p>
-            <div style="display: flex; gap: 30px; margin-top: 15px;">
-                <span class="text-white">📚 Citations: <strong>{pub["citations"]}</strong></span>
-            </div>
+            <h3 class="text-white" style="font-size: 1.1rem; margin-bottom: 10px;">{pub.get('title', '')}</h3>
+            <p class="text-gradient" style="font-weight: 600; margin-bottom: 8px;">
+                {pub.get('publisher', '')} {f"• {pub.get('publication_date', '')}" if pub.get('publication_date') else ""}
+            </p>
+            <p class="text-white" style="font-size: 0.9rem; line-height: 1.7; opacity: 0.85;">{pub.get('description', '')}</p>
         </div>
         ''', unsafe_allow_html=True)
 
     st.markdown('</div>', unsafe_allow_html=True)
 
-    # Patents
+    # Certifications from profile.json
     st.markdown('<div class="glass-card">', unsafe_allow_html=True)
-    st.markdown('<h2 class="section-header">Patent Portfolio</h2>', unsafe_allow_html=True)
-
-    patents = [
-        {"title": "DriveVision", "id": "KZ 60968", "year": "2025", "category": "Computer Vision"},
-        {"title": "Hyperports - Blockchain Port Operations", "id": "KZ 59912", "year": "2025",
-         "category": "Blockchain"},
-        {"title": "AutoTrade - Automotive Dealership Management", "id": "KZ 59905", "year": "2025",
-         "category": "AI/Business"},
-        {"title": "XG SONIC - Network Speed Optimization", "id": "KZ 59121", "year": "2025", "category": "5G/6G"},
-        {"title": "Carso - Auto Parts Trading Platform", "id": "KZ 58713", "year": "2025",
-         "category": "AI/Marketplace"},
-        {"title": "Shyndyq - AI Plagiarism Detector", "id": "KZ 47184", "year": "2024", "category": "AI/Education"}
-    ]
+    st.markdown('<h2 class="section-header">Certifications</h2>', unsafe_allow_html=True)
 
     cols = st.columns(2)
-    for i, patent in enumerate(patents):
+    for i, cert in enumerate(profile_data.get('certifications', [])):
         with cols[i % 2]:
             st.markdown(f'''
             <div class="achievement-card">
-                <h4 class="text-white">{patent["title"]}</h4>
-                <p class="text-gradient" style="font-weight: 600;">{patent["id"]} • {patent["year"]}</p>
-                <span class="skill-tag">{patent["category"]}</span>
+                <h4 class="text-white" style="font-size: 0.95rem; margin-bottom: 8px;">{cert.get('title', '')}</h4>
+                <p class="text-gradient" style="font-weight: 500; font-size: 0.85rem;">{cert.get('issuer', '')}</p>
+                <p class="text-muted" style="font-size: 0.8rem;">{cert.get('issued_date', '').split(' Credential')[0] if cert.get('issued_date') else ''}</p>
             </div>
             ''', unsafe_allow_html=True)
 
@@ -762,277 +795,128 @@ elif st.session_state.current_page == 'projects':
     st.markdown('<h1 class="hero-name">Innovation Portfolio</h1>', unsafe_allow_html=True)
     st.markdown('<p class="hero-title">Building Tomorrow\'s Technology</p>', unsafe_allow_html=True)
 
-    # Featured Projects
-    projects = [
-        {
-            "name": "XG SONIC - Network Speed Optimization",
-            "category": "5G/6G Technology",
-            "status": "Production",
-            "description": "Revolutionary AI-powered speed optimization for 5G/6G networks with 66% latency reduction",
-            "tech": ["LSTM", "CNN", "Python", "Edge Computing"],
-            "metrics": {"Latency Reduction": "66%", "Throughput": "+150%", "Energy Savings": "30%"},
-            "color": "#00ff88"
-        },
-        {
-            "name": "Carso - Auto Parts Trading Platform",
-            "category": "AI Marketplace",
-            "status": "Production",
-            "description": "Revolutionary auto parts marketplace with AI-powered matching and real-time trading",
-            "tech": ["Python", "Flask", "PostgreSQL", "WebSocket"],
-            "metrics": {"Sourcing Time": "-70%", "Price Reduction": "25%", "Satisfaction": "95%"},
-            "color": "#00ff88"
-        },
-        {
-            "name": "DriveVision - AI Driving Assessment",
-            "category": "Computer Vision",
-            "status": "Production",
-            "description": "Computer vision solution for driving license exams with biometric authentication",
-            "tech": ["PyTorch", "Transformers", "OpenCV", "Real-time Processing"],
-            "metrics": {"Error Reduction": "25%", "Accuracy": "98%", "Processing": "Real-time"},
-            "color": "#00ff88"
-        },
-        {
-            "name": "Aleem - AI Language Learning",
-            "category": "EdTech & Web3",
-            "status": "Production",
-            "description": "AI-powered language learning platform with Web3 tokenomics and 7-day fluency confidence",
-            "tech": ["NLP", "Blockchain", "Telegram", "Web3"],
-            "metrics": {"Error Reduction": "50%", "Reach": "300M+", "Revenue": "$200K"},
-            "color": "#00ff88"
-        },
-        {
-            "name": "Shyndyq - AI Plagiarism Detector",
-            "category": "AI/Education",
-            "status": "Production",
-            "description": "Advanced plagiarism detection with writing style analysis and AI content recognition",
-            "tech": ["AI/ML", "NLP", "Computer Vision", "Cross-platform"],
-            "metrics": {"AI Detection": "100%", "Accuracy": "95%", "Speed": "Real-time"},
-            "color": "#00ff88"
-        },
-        {
-            "name": "HealthHub - AI Health Monitoring",
-            "category": "Healthcare AI",
-            "status": "Research",
-            "description": "Comprehensive health monitoring platform integrating wearables with genetic analysis",
-            "tech": ["AI/ML", "IoT", "Wearable Tech", "DNA Analysis"],
-            "metrics": {"Monitoring": "Real-time", "Readmissions": "-20%", "Cost Savings": "Significant"},
-            "color": "#ffa500"
-        }
-    ]
-
     st.markdown('<div class="glass-card">', unsafe_allow_html=True)
     st.markdown('<h2 class="section-header">Featured Projects</h2>', unsafe_allow_html=True)
 
+    # Get projects from profile.json
+    projects = [p for p in profile_data.get('projects', []) if p.get('name') and p.get('description')]
+
     for project in projects:
+        name = project.get('name', '')
+        description = project.get('description', '')
+        start_date = project.get('date', {}).get('start_date', '') if project.get('date') else ''
+        end_date = project.get('date', {}).get('end_date', '') if project.get('date') else ''
+
+        # Clean description
+        if description:
+            import re
+            description = re.sub(r'[✅🚀🔧📊⚡🧠📈💡]', '', description)
+            description = description[:500] + '...' if len(description) > 500 else description
+
+        period = f"{start_date} - {end_date if end_date else 'Present'}" if start_date else ""
+
         st.markdown(f'''
         <div class="achievement-card">
-            <div style="display: flex; justify-content: space-between; align-items: start;">
-                <div style="flex: 1;">
-                    <h3 class="text-white">{project["name"]}</h3>
-                    <span style="background: {project["color"]}; color: #000; padding: 5px 15px; 
-                                border-radius: 20px; font-weight: 600; font-size: 0.9rem; 
-                                display: inline-block; margin: 10px 0;">
-                        {project["status"]}
-                    </span>
-                    <p class="text-gradient" style="font-weight: 600; margin: 10px 0;">{project["category"]}</p>
-                    <p class="text-white" style="margin: 15px 0;">{project["description"]}</p>
-
-                    <div style="margin: 20px 0;">
-                        <p class="text-muted" style="margin-bottom: 10px;">Technologies:</p>
-                        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-                            {"".join([f'<span class="skill-tag">{tech}</span>' for tech in project["tech"]])}
-                        </div>
-                    </div>
-
-                    <div style="display: flex; gap: 30px; margin-top: 20px;">
-                        {"".join([f'<div><p class="text-gradient" style="font-weight: 700; font-size: 1.2rem;">{value}</p><p class="text-muted" style="font-size: 0.9rem;">{key}</p></div>'
-                                  for key, value in project["metrics"].items()])}
-                    </div>
-                </div>
+            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 12px;">
+                <h3 class="text-white" style="font-size: 1.1rem; flex: 1;">{name}</h3>
+                <span style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(5, 150, 105, 0.2) 100%);
+                            color: #6ee7b7; padding: 6px 14px; border-radius: 20px; font-size: 0.8rem;
+                            font-weight: 500; white-space: nowrap;">
+                    {period}
+                </span>
             </div>
+            <p class="text-white" style="font-size: 0.9rem; line-height: 1.7; opacity: 0.85;">{description}</p>
         </div>
         ''', unsafe_allow_html=True)
 
     st.markdown('</div>', unsafe_allow_html=True)
-
-    # Project Stats
-    st.markdown('<h2 class="section-header">Impact Metrics</h2>', unsafe_allow_html=True)
-    cols = st.columns(4)
-
-    metrics = [
-        ("Total Projects", "45+", "🚀"),
-        ("Active Users", "1M+", "👥"),
-        ("Patents Filed", "12+", "📋"),
-        ("Open Source", "20+", "🌐")
-    ]
-
-    for col, (label, value, icon) in zip(cols, metrics):
-        with col:
-            st.markdown(f'''
-            <div class="metric-card">
-                <div style="font-size: 2.5rem;">{icon}</div>
-                <div class="metric-number">{value}</div>
-                <div class="metric-label">{label}</div>
-            </div>
-            ''', unsafe_allow_html=True)
 
 elif st.session_state.current_page == 'achievements':
-    st.markdown('<h1 class="hero-name">Achievements & Recognition</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="hero-name">Achievements</h1>', unsafe_allow_html=True)
     st.markdown('<p class="hero-title">Excellence Across Multiple Disciplines</p>', unsafe_allow_html=True)
 
-    # Recent Major Awards
+    # Get categorized awards
+    categorized_awards = get_categorized_awards()
+
+    # Category icons and colors
+    category_config = {
+        "Sports": {"icon": "🏋️", "color": "#ef4444", "gradient": "from-red-500 to-orange-500"},
+        "Science": {"icon": "🔬", "color": "#8b5cf6", "gradient": "from-purple-500 to-indigo-500"},
+        "Technology": {"icon": "💻", "color": "#3b82f6", "gradient": "from-blue-500 to-cyan-500"},
+        "Entrepreneurship": {"icon": "🚀", "color": "#10b981", "gradient": "from-green-500 to-emerald-500"},
+        "Academic": {"icon": "🎓", "color": "#f59e0b", "gradient": "from-amber-500 to-yellow-500"},
+        "Chess": {"icon": "♟️", "color": "#6366f1", "gradient": "from-indigo-500 to-purple-500"},
+        "Extra": {"icon": "✨", "color": "#ec4899", "gradient": "from-pink-500 to-rose-500"}
+    }
+
+    # Overview Stats
     st.markdown('<div class="glass-card">', unsafe_allow_html=True)
-    st.markdown('<h2 class="section-header">Recent Major Awards</h2>', unsafe_allow_html=True)
+    st.markdown('<h2 class="section-header">Achievement Overview</h2>', unsafe_allow_html=True)
 
-    recent_awards = [
-        {
-            "title": "Top 31 Among 241,817 Worldwide",
-            "org": "ProjectEuler+ HackerRank",
-            "year": 2025,
-            "category": "Programming Excellence",
-            "description": "Elite ranking in mathematical programming challenges"
-        },
-        {
-            "title": "World Record Holder",
-            "org": "IPC (International Powerlifting)",
-            "year": 2025,
-            "category": "Sports",
-            "description": "Multiple world records in classic and extreme biceps curl"
-        },
-        {
-            "title": "Undergraduate Research Scholar",
-            "org": "Rochester Institute of Technology",
-            "year": 2024,
-            "category": "Academic Excellence",
-            "description": "Prestigious recognition for exceptional research capabilities"
-        },
-        {
-            "title": "International Astronomy Competition National Award",
-            "org": "IAAC",
-            "year": 2024,
-            "category": "Science",
-            "description": "National-level recognition in astronomy and astrophysics"
-        },
-        {
-            "title": "ICE24 Competition Absolute Champions",
-            "org": "United Nations",
-            "year": 2024,
-            "category": "AI Innovation",
-            "description": "Global competition winner for AI in Healthcare solutions"
-        }
-    ]
+    cols = st.columns(len([c for c, awards in categorized_awards.items() if awards]))
+    col_idx = 0
 
-    for award in recent_awards:
-        st.markdown(f'''
-        <div class="achievement-card">
-            <div style="display: flex; align-items: start; gap: 20px;">
-                <div style="font-size: 3rem;">🏆</div>
-                <div style="flex: 1;">
-                    <h3 class="text-white">{award["title"]}</h3>
-                    <p class="text-gradient" style="font-weight: 600; font-size: 1.1rem;">{award["org"]} • {award["year"]}</p>
-                    <p class="text-muted" style="margin: 10px 0;">{award["category"]}</p>
-                    <p class="text-white">{award["description"]}</p>
+    for category, awards in categorized_awards.items():
+        if awards:
+            config = category_config.get(category, {"icon": "🏆", "color": "#818cf8"})
+            with cols[col_idx]:
+                st.markdown(f'''
+                <div class="metric-card">
+                    <div style="font-size: 2.5rem; margin-bottom: 8px;">{config["icon"]}</div>
+                    <div class="metric-number">{len(awards)}</div>
+                    <div class="metric-label">{category}</div>
                 </div>
-            </div>
-        </div>
-        ''', unsafe_allow_html=True)
+                ''', unsafe_allow_html=True)
+            col_idx += 1
 
     st.markdown('</div>', unsafe_allow_html=True)
 
-    # Achievement Categories
-    st.markdown('<div class="glass-card">', unsafe_allow_html=True)
-    st.markdown('<h2 class="section-header">Achievement Categories</h2>', unsafe_allow_html=True)
+    # Tabs for each category
+    tab_names = [f"{category_config[cat]['icon']} {cat}" for cat, awards in categorized_awards.items() if awards]
+    tabs = st.tabs(tab_names)
 
-    cols = st.columns(2)
+    tab_idx = 0
+    for category, awards in categorized_awards.items():
+        if awards:
+            with tabs[tab_idx]:
+                config = category_config.get(category, {"icon": "🏆", "color": "#818cf8"})
 
-    categories = [
-        {
-            "title": "Academic & Research",
-            "icon": "🎓",
-            "items": [
-                "Dean's List (6 times)",
-                "Magna Cum Laude Graduate",
-                "International Math Challenge Silver",
-                "Multiple Research Publications"
-            ]
-        },
-        {
-            "title": "Sports Excellence",
-            "icon": "🥇",
-            "items": [
-                "World Records in Powerlifting",
-                "Asia Champion in Multiple Events",
-                "Master of Sports (Boxing, Martial Arts)",
-                "Chess Arena International Master"
-            ]
-        },
-        {
-            "title": "Technology & Innovation",
-            "icon": "💻",
-            "items": [
-                "Google Farewell Rounds Top 29/81,000",
-                "Microsoft AI Skills Challenge Winner",
-                "ZainTECH Data Challenge 3rd Place",
-                "Multiple Hackathon Victories"
-            ]
-        },
-        {
-            "title": "Leadership & Mentorship",
-            "icon": "🌟",
-            "items": [
-                "RIT Dubai Ambassador Award",
-                "International Hackathon Mentor",
-                "Guest Speaker at AI Conferences",
-                "Teens in AI Mentor (1.5+ years)"
-            ]
-        }
-    ]
+                st.markdown(f'''
+                <div class="category-card">
+                    <div class="category-header">
+                        <span class="category-icon">{config["icon"]}</span>
+                        <span class="category-title">{category} Achievements</span>
+                        <span class="category-count">{len(awards)} awards</span>
+                    </div>
+                ''', unsafe_allow_html=True)
 
-    for i, category in enumerate(categories):
-        with cols[i % 2]:
-            st.markdown(f'''
-            <div class="achievement-card">
-                <div style="text-align: center; margin-bottom: 20px;">
-                    <div style="font-size: 3rem;">{category["icon"]}</div>
-                    <h3 class="text-gradient">{category["title"]}</h3>
-                </div>
-                <ul style="list-style: none; padding: 0;">
-                    {"".join([f'<li class="text-white" style="margin: 10px 0;">• {item}</li>' for item in category["items"]])}
-                </ul>
-            </div>
-            ''', unsafe_allow_html=True)
+                for award in awards:
+                    title = award.get('title', '')
+                    issuer = award.get('issuer', '')
+                    date = award.get('issued_date', '')
+                    description = award.get('description', '')
 
-    st.markdown('</div>', unsafe_allow_html=True)
+                    st.markdown(f'''
+                    <div class="award-item">
+                        <div class="award-title">{title}</div>
+                        <div class="award-meta">{issuer} {f"• {date}" if date else ""}</div>
+                        {f'<p class="text-white" style="font-size: 0.85rem; margin-top: 8px; opacity: 0.7;">{description[:200]}...</p>' if description and len(description) > 10 else ''}
+                    </div>
+                    ''', unsafe_allow_html=True)
 
-    # Achievement Timeline
-    st.markdown('<div class="glass-card">', unsafe_allow_html=True)
-    st.markdown('<h2 class="section-header">Achievement Timeline</h2>', unsafe_allow_html=True)
-
-    timeline_awards = [
-        {"year": 2025, "count": 8, "highlight": "World Records & #1 Country Choice"},
-        {"year": 2024, "count": 12, "highlight": "UN Competition Winner & Research Scholar"},
-        {"year": 2023, "count": 10, "highlight": "Google Top 29 & Microsoft AI Winner"},
-        {"year": 2022, "count": 8, "highlight": "International Awards & Dean's List"},
-        {"year": 2021, "count": 15, "highlight": "National Math Award & Hackathon Victories"},
-        {"year": 2020, "count": 6, "highlight": "Multiple Certifications & Dean's List"}
-    ]
-
-    cols = st.columns(3)
-    for i, item in enumerate(timeline_awards):
-        with cols[i % 3]:
-            st.markdown(f'''
-            <div class="metric-card">
-                <div class="metric-number">{item["count"]}</div>
-                <div class="metric-label">{item["year"]}</div>
-                <p class="text-white" style="font-size: 0.8rem; margin-top: 10px;">{item["highlight"]}</p>
-            </div>
-            ''', unsafe_allow_html=True)
-
-    st.markdown('</div>', unsafe_allow_html=True)
+                st.markdown('</div>', unsafe_allow_html=True)
+            tab_idx += 1
 
 elif st.session_state.current_page == 'analytics':
-    st.markdown('<h1 class="hero-name">Performance Analytics</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="hero-name">Analytics Dashboard</h1>', unsafe_allow_html=True)
     st.markdown('<p class="hero-title">Data-Driven Success Metrics</p>', unsafe_allow_html=True)
+
+    # Calculate statistics from profile
+    categorized_awards = get_categorized_awards()
+    total_awards = len(profile_data.get('honors_and_awards', []))
+    total_projects = len([p for p in profile_data.get('projects', []) if p.get('name')])
+    total_experience = len([e for e in profile_data.get('experience', []) if e.get('title')])
+    total_certs = len(profile_data.get('certifications', []))
 
     # Overall Statistics
     st.markdown('<div class="glass-card">', unsafe_allow_html=True)
@@ -1040,71 +924,42 @@ elif st.session_state.current_page == 'analytics':
 
     cols = st.columns(4)
     stats = [
-        ("Patents Filed", "12+", "📋", "From AI to Blockchain"),
-        ("Research Papers", "3", "📚", "IEEE & MSI Publications"),
-        ("Projects Completed", "45+", "💡", "Across Multiple Domains"),
-        ("Awards Won", "80+", "🏆", "International Recognition"),
-        ("Companies Founded", "4", "🏢", "Active Leadership Roles"),
-        ("Team Members Led", "200+", "👥", "Across Organizations"),
-        ("Conference Talks", "15+", "🎤", "Global Speaking"),
-        ("Certifications", "50+", "🎓", "Technology & Leadership")
+        ("Total Awards", total_awards, "🏆"),
+        ("Projects", total_projects, "💡"),
+        ("Certifications", total_certs, "🎓"),
+        ("Positions Held", total_experience, "💼")
     ]
 
-    for i, (label, value, icon, growth) in enumerate(stats):
-        with cols[i % 4]:
+    for col, (label, value, icon) in zip(cols, stats):
+        with col:
             st.markdown(f'''
-            <div class="metric-card">
-                <div style="font-size: 2rem;">{icon}</div>
+            <div class="metric-card glow">
+                <div style="font-size: 2.5rem; margin-bottom: 8px;">{icon}</div>
                 <div class="metric-number">{value}</div>
                 <div class="metric-label">{label}</div>
-                <p class="text-gradient" style="font-size: 0.8rem; margin-top: 10px;">{growth}</p>
             </div>
             ''', unsafe_allow_html=True)
 
     st.markdown('</div>', unsafe_allow_html=True)
 
-    # Growth Charts
+    # Achievement Distribution Chart
     st.markdown('<div class="glass-card">', unsafe_allow_html=True)
-    st.markdown('<h2 class="section-header">Career Growth Trajectory</h2>', unsafe_allow_html=True)
+    st.markdown('<h2 class="section-header">Achievement Distribution</h2>', unsafe_allow_html=True)
 
-    # Create sample data for visualization based on real timeline
-    years = [2019, 2020, 2021, 2022, 2023, 2024, 2025]
-    projects = [2, 8, 15, 22, 30, 38, 45]
-    patents = [0, 0, 1, 3, 6, 10, 12]
-    team_size = [0, 10, 25, 50, 100, 150, 200]
-    awards = [8, 15, 28, 45, 60, 70, 80]
+    # Create pie chart for achievement categories
+    category_counts = {cat: len(awards) for cat, awards in categorized_awards.items() if awards}
 
-    # Create plotly chart
-    fig = go.Figure()
-
-    fig.add_trace(go.Scatter(
-        x=years, y=projects,
-        name='Projects',
-        line=dict(color='#667eea', width=3),
-        marker=dict(size=10)
-    ))
-
-    fig.add_trace(go.Scatter(
-        x=years, y=patents,
-        name='Patents',
-        line=dict(color='#764ba2', width=3),
-        marker=dict(size=10)
-    ))
-
-    fig.add_trace(go.Scatter(
-        x=years, y=awards,
-        name='Awards',
-        line=dict(color='#f093fb', width=3),
-        marker=dict(size=10)
-    ))
-
-    fig.add_trace(go.Scatter(
-        x=years, y=team_size,
-        name='Team Size',
-        line=dict(color='#fda085', width=3),
-        marker=dict(size=10),
-        yaxis='y2'
-    ))
+    fig = go.Figure(data=[go.Pie(
+        labels=list(category_counts.keys()),
+        values=list(category_counts.values()),
+        hole=0.5,
+        marker=dict(
+            colors=['#ef4444', '#8b5cf6', '#3b82f6', '#10b981', '#f59e0b', '#6366f1', '#ec4899'],
+            line=dict(color='rgba(255,255,255,0.1)', width=2)
+        ),
+        textfont=dict(color='white', size=14),
+        hovertemplate="<b>%{label}</b><br>%{value} awards<br>%{percent}<extra></extra>"
+    )])
 
     fig.update_layout(
         plot_bgcolor='rgba(0,0,0,0)',
@@ -1115,89 +970,138 @@ elif st.session_state.current_page == 'analytics':
         legend=dict(
             orientation="h",
             yanchor="bottom",
-            y=1.02,
-            xanchor="right",
-            x=1
+            y=-0.15,
+            xanchor="center",
+            x=0.5,
+            font=dict(size=12)
         ),
-        yaxis=dict(
-            title="Count",
-            gridcolor='rgba(255,255,255,0.1)'
-        ),
-        yaxis2=dict(
-            title="Team Size",
-            overlaying='y',
-            side='right',
-            gridcolor='rgba(255,255,255,0.1)'
-        ),
-        xaxis=dict(
-            title="Year",
-            gridcolor='rgba(255,255,255,0.1)'
-        )
+        margin=dict(t=20, b=80, l=20, r=20)
     )
 
     st.plotly_chart(fig, use_container_width=True)
+    st.markdown('</div>', unsafe_allow_html=True)
+
+    # Awards Timeline
+    st.markdown('<div class="glass-card">', unsafe_allow_html=True)
+    st.markdown('<h2 class="section-header">Awards Timeline</h2>', unsafe_allow_html=True)
+
+    # Count awards by year
+    year_counts = {}
+    for award in profile_data.get('honors_and_awards', []):
+        date_str = award.get('issued_date', '')
+        if date_str:
+            # Extract year from date string
+            import re
+            year_match = re.search(r'20\d{2}', date_str)
+            if year_match:
+                year = int(year_match.group())
+                year_counts[year] = year_counts.get(year, 0) + 1
+
+    if year_counts:
+        years = sorted(year_counts.keys())
+        counts = [year_counts[y] for y in years]
+
+        fig2 = go.Figure()
+        fig2.add_trace(go.Bar(
+            x=years,
+            y=counts,
+            marker=dict(
+                color=counts,
+                colorscale=[[0, '#818cf8'], [0.5, '#a78bfa'], [1, '#c4b5fd']],
+                line=dict(color='rgba(255,255,255,0.2)', width=1)
+            ),
+            hovertemplate="<b>%{x}</b><br>%{y} awards<extra></extra>"
+        ))
+
+        fig2.update_layout(
+            plot_bgcolor='rgba(0,0,0,0)',
+            paper_bgcolor='rgba(0,0,0,0)',
+            font=dict(color='white'),
+            height=350,
+            xaxis=dict(
+                gridcolor='rgba(255,255,255,0.05)',
+                tickfont=dict(size=12)
+            ),
+            yaxis=dict(
+                gridcolor='rgba(255,255,255,0.05)',
+                title="Awards Count",
+                tickfont=dict(size=12)
+            ),
+            margin=dict(t=20, b=40, l=60, r=20)
+        )
+
+        st.plotly_chart(fig2, use_container_width=True)
 
     st.markdown('</div>', unsafe_allow_html=True)
 
-    # Skills Distribution
+    # Skills/Expertise from Certifications
     st.markdown('<div class="glass-card">', unsafe_allow_html=True)
-    st.markdown('<h2 class="section-header">Core Competencies</h2>', unsafe_allow_html=True)
+    st.markdown('<h2 class="section-header">Expertise Areas</h2>', unsafe_allow_html=True)
 
-    skills_data = pd.DataFrame({
-        'Skill': ['AI/ML', 'Leadership', 'Blockchain', 'Computer Vision', 'Research', 'Innovation'],
-        'Level': [95, 92, 88, 90, 85, 94]
-    })
+    # Extract issuer organizations for expertise
+    issuers = {}
+    for cert in profile_data.get('certifications', []):
+        issuer = cert.get('issuer', '')
+        if issuer:
+            # Clean up issuer name
+            issuer = issuer.split('(')[0].strip()
+            issuers[issuer] = issuers.get(issuer, 0) + 1
 
-    fig2 = px.bar(skills_data, x='Level', y='Skill', orientation='h',
-                  color='Level', color_continuous_scale=['#667eea', '#764ba2'])
+    if issuers:
+        sorted_issuers = sorted(issuers.items(), key=lambda x: x[1], reverse=True)[:8]
 
-    fig2.update_layout(
-        plot_bgcolor='rgba(0,0,0,0)',
-        paper_bgcolor='rgba(0,0,0,0)',
-        font=dict(color='white'),
-        height=300,
-        showlegend=False,
-        xaxis=dict(gridcolor='rgba(255,255,255,0.1)'),
-        yaxis=dict(gridcolor='rgba(255,255,255,0.1)')
-    )
+        fig3 = go.Figure()
+        fig3.add_trace(go.Bar(
+            y=[i[0] for i in sorted_issuers],
+            x=[i[1] for i in sorted_issuers],
+            orientation='h',
+            marker=dict(
+                color=[i[1] for i in sorted_issuers],
+                colorscale=[[0, '#818cf8'], [1, '#c4b5fd']],
+                line=dict(color='rgba(255,255,255,0.2)', width=1)
+            ),
+            hovertemplate="<b>%{y}</b><br>%{x} certifications<extra></extra>"
+        ))
 
-    st.plotly_chart(fig2, use_container_width=True)
+        fig3.update_layout(
+            plot_bgcolor='rgba(0,0,0,0)',
+            paper_bgcolor='rgba(0,0,0,0)',
+            font=dict(color='white'),
+            height=350,
+            xaxis=dict(
+                gridcolor='rgba(255,255,255,0.05)',
+                title="Certifications",
+                tickfont=dict(size=11)
+            ),
+            yaxis=dict(
+                gridcolor='rgba(255,255,255,0.05)',
+                tickfont=dict(size=11)
+            ),
+            margin=dict(t=20, b=40, l=150, r=20)
+        )
 
-    st.markdown('</div>', unsafe_allow_html=True)
-
-    # Impact Metrics
-    st.markdown('<div class="glass-card">', unsafe_allow_html=True)
-    st.markdown('<h2 class="section-header">Global Impact</h2>', unsafe_allow_html=True)
-
-    impact_metrics = [
-        {"metric": "Countries Reached", "value": "35+", "description": "Through Aleem platform"},
-        {"metric": "Users Impacted", "value": "1M+", "description": "Across all platforms"},
-        {"metric": "Revenue Generated", "value": "$50M+", "description": "Combined ventures"},
-        {"metric": "Patents Pending", "value": "5+", "description": "Additional innovations"}
-    ]
-
-    cols = st.columns(2)
-    for i, metric in enumerate(impact_metrics):
-        with cols[i % 2]:
-            st.markdown(f'''
-            <div class="achievement-card">
-                <h3 class="text-gradient">{metric["metric"]}</h3>
-                <p class="metric-number" style="font-size: 2rem; margin: 10px 0;">{metric["value"]}</p>
-                <p class="text-white">{metric["description"]}</p>
-            </div>
-            ''', unsafe_allow_html=True)
+        st.plotly_chart(fig3, use_container_width=True)
 
     st.markdown('</div>', unsafe_allow_html=True)
 
 # Footer
-st.markdown("""
-<div style="margin-top: 60px; padding: 30px 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.1);">
-    <p class="text-muted">© 2025 Alisher Beisembekov. Building the future through innovation, one breakthrough at a time.</p>
-    <div style="margin-top: 15px;">
-        <a href="https://www.linkedin.com/in/alisher-beisembekov/" style="color: rgba(255, 255, 255, 0.6); margin: 0 10px;">LinkedIn</a>
-        <a href="https://github.com/damn-glitch" style="color: rgba(255, 255, 255, 0.6); margin: 0 10px;">GitHub</a>
-        <a href="https://www.smartr.me/me/alisher.beisembekov" style="color: rgba(255, 255, 255, 0.6); margin: 0 10px;">SmartR</a>
-        <a href="https://www.credly.com/users/alisher-beisembekov/badges" style="color: rgba(255, 255, 255, 0.6); margin: 0 10px;">Credly</a>
+st.markdown(f"""
+<div style="margin-top: 80px; padding: 40px 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.08);">
+    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 20px;">
+        © 2025 {profile_data.get('name', 'Alisher Beisembekov')}. Building the future through innovation, one breakthrough at a time.
+    </p>
+    <div style="display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;">
+        <a href="{profile_data.get('url', 'https://www.linkedin.com/in/alisher-beisembekov/')}" target="_blank"
+           style="color: rgba(255, 255, 255, 0.5); text-decoration: none; transition: all 0.3s ease; font-size: 0.85rem;">LinkedIn</a>
+        <a href="https://github.com/damn-glitch" target="_blank"
+           style="color: rgba(255, 255, 255, 0.5); text-decoration: none; transition: all 0.3s ease; font-size: 0.85rem;">GitHub</a>
+        <a href="https://www.smartr.me/me/alisher.beisembekov" target="_blank"
+           style="color: rgba(255, 255, 255, 0.5); text-decoration: none; transition: all 0.3s ease; font-size: 0.85rem;">SmartR</a>
+        <a href="https://www.credly.com/users/alisher-beisembekov/badges" target="_blank"
+           style="color: rgba(255, 255, 255, 0.5); text-decoration: none; transition: all 0.3s ease; font-size: 0.85rem;">Credly</a>
     </div>
+    <p class="text-muted" style="font-size: 0.75rem; margin-top: 20px; opacity: 0.5;">
+        {profile_data.get('location', 'Astana, Kazakhstan')} • {profile_data.get('followers', '')} • {profile_data.get('connections', '')}
+    </p>
 </div>
 """, unsafe_allow_html=True)
