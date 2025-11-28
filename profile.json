@@ -1,103 +1,1506 @@
 {
+  "url": "https://www.linkedin.com/in/alisher-beisembekov/",
+  "profile": "alisher-beisembekov",
+  "crawled_at": "19/08/2025 13:30:32",
   "name": "Alisher Beisembekov",
-  "headline": "Polymath • Innovator • Visionary",
-  "about": "Brief summary about you. Upload PDF/JSON to overwrite.",
-  "contacts": {},
-  "socials": {},
-  "skills": {
-    "Technology": [
-      "AI/ML",
-      "Python",
-      "Cloud"
-    ],
-    "Leadership": [
-      "Strategy",
-      "Product",
-      "Mentorship"
-    ],
-    "Research": [
-      "Publications",
-      "Patents"
-    ]
-  },
-  "languages": [
-    "Русский",
-    "Казахский",
-    "English"
+  "description": "My CV: https://drive.google.com/file/d/16fezTOj1gvRowT82YhSOwENjWeKgJbPX/view?usp=drive_link Google Qwiklabs profile: https://run.qwiklabs.com/public_profiles/c4029fb0-19e6-4d9e-839c-c352a36e1785 GitHub: https://github.com/damn-glitch SmatrMe profile: https://www.smartr.me/me/alisher.beisembekov Creddly badges page: https://www.credly.com/users/alisher-beisembekov/badges SimplyCity: https://ritdubai-csm.symplicity.com/profiles/alisher.beisembekov",
+  "location": "Astana, Kazakhstan",
+  "followers": "1084 followers",
+  "connections": "500 connections",
+  "experience": [
+    {
+      "title": "Co-Founder",
+      "company_name": "Carso.kz",
+      "company_link": null,
+      "image_url": "https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f",
+      "date": {
+        "start_date": "May 2025",
+        "end_date": "Present",
+        "duration": {
+          "years": 0,
+          "months": 4
+        }
+      },
+      "location": "Astana, Kazakhstan",
+      "description": "As Co-Founder of Carso, I lead our mission to revolutionize automotive warranty and service delivery through technology-driven solutions across Kazakhstan. I oversee all business operations while spearheading development of our proprietary mobile and web applications that enhance customer experience and operational efficiency.<br><br>Strategic Leadership<br>&#x2022; Define long-term strategy, mission, and core values positioning Carso as the market leader in automotive warranty services<br>&#x2022; Establish annual KPIs, strategic roadmaps, and measurable goals with executive leadership<br>&#x2022; Drive aggressive growth initiatives across Kazakhstan and regional markets<br><br>Business Development &amp; Partnerships<br>&#x2022; Negotiate and manage high-value partnerships with automotive dealerships and service centers<br>&#x2022; Continuously expand Carso&apos;s service network to maximize market coverage and customer accessibility<br>&#x2022; Identify new revenue streams and business opportunities in the automotive services sector<br><br>Technology Innovation<br>&#x2022; Guide development roadmap for guarantee programs and innovative service offerings<br>&#x2022; Direct feature prioritization, UX/UI design, and engineering sprints for Carso mobile and web platforms<br>&#x2022; Ensure our technology stack remains cutting-edge and scalable for future growth<br><br>Financial &amp; Operational Excellence<br>&#x2022; Oversee budget planning, financial forecasting, and strategic investment decisions<br>&#x2022; Maintain rigorous oversight of P&amp;L statements, cash flow management, and capital allocation<br>&#x2022; Optimize operational workflows to enhance efficiency, quality, and customer satisfaction<br><br>Leadership &amp; Governance<br>&#x2022; Recruit, mentor, and develop senior leadership team and key technical talent<br>&#x2022; Foster high-performance, customer-centric culture that drives innovation and excellence<br>&#x2022; Ensure adherence to local regulations, industry standards, and corporate governance practices"
+    },
+    {
+      "title": "Aleem",
+      "company_name": "Aleem",
+      "company_link": null,
+      "image_url": null,
+      "date": {
+        "start_date": null,
+        "end_date": null,
+        "duration": {
+          "years": 0,
+          "months": 0
+        }
+      },
+      "location": null,
+      "description": null
+    },
+    {
+      "title": "JASAIM",
+      "company_name": "JASAIM",
+      "company_link": "https://kz.linkedin.com/company/jasaim?trk=public_profile_experience-group-header",
+      "image_url": null,
+      "date": {
+        "start_date": null,
+        "end_date": null,
+        "duration": {
+          "years": 0,
+          "months": 0
+        }
+      },
+      "location": null,
+      "description": null
+    },
+    {
+      "title": "Chief Executive Officer & Founder",
+      "company_name": "Infinitum Intelligence",
+      "company_link": null,
+      "image_url": "https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f",
+      "date": {
+        "start_date": "Oct 2023",
+        "end_date": "Present",
+        "duration": {
+          "years": 1,
+          "months": 11
+        }
+      },
+      "location": null,
+      "description": "As Founder &amp; CEO of Infinitum Intelligence, I steer a technology company at the intersection of AI, blockchain, and computer vision. I define our strategic vision, secure funding, and forge partnerships that transform cutting-edge research into scalable solutions for healthcare, finance, transportation, education, logistics, urban planning, telecommunications, and secure communications.<br><br>Strategy &amp; Leadership<br><br>&#x2022; Set mission, long-term strategy, and annual objectives to establish global technology leadership<br>&#x2022; Align board, stakeholders, and governance for seamless execution<br><br>Product &amp; Innovation<br><br>&#x2022; Delivered 9 flagship platforms, including HealthHub, CryptoProphet, FraudDetect, DriveVision, Shyndyq, Hyperport, CityBuilder, 5G Interference Model, and ShareTalk<br>&#x2022; Translate research into production systems using deep learning, tokenization, and vision pipelines<br>&#x2022; Integrate user feedback and analytics to refine roadmaps iteratively<br><br>Architecture &amp; Security<br><br>&#x2022; Architect secure, scalable infrastructures with microservices, container orchestration, and CI/CD<br>&#x2022; Lead algorithm design and enforce GDPR, HIPAA, and industry-standard compliance<br>&#x2022; Oversee security audits and penetration tests to ensure high availability<br><br>IP &amp; Partnerships<br><br>&#x2022; Secure patents on proprietary AI and blockchain frameworks<br>&#x2022; Forge alliances with government agencies, financial institutions, and academic partners for co-development and licensing<br><br>Investor Relations &amp; Operations<br><br>&#x2022; Drive fundraising, develop investor materials, and maintain active communication with venture and strategic backers<br>&#x2022; Implement financial planning, budgeting, and KPI dashboards to optimize resource allocation<br>&#x2022; Manage risk frameworks and vendor relationships for operational resilience<br><br>Market Expansion &amp; Impact<br><br>&#x2022; Execute go-to-market strategies and establish regional operations across key markets<br>&#x2022; Share thought leadership through peer-reviewed publications, innovation awards, and keynote presentations"
+    },
+    {
+      "title": "Lead Developer",
+      "company_name": "IBM",
+      "company_link": "https://www.linkedin.com/company/ibm",
+      "image_url": "https://media.licdn.com/dms/image/v2/D560BAQGiz5ecgpCtkA/company-logo_100_100/company-logo_100_100/0/1688684715866/ibm_logo?e=2147483647&v=beta&t=HPSmWLOCvdPkWO1nRWwjjmCNpaCqww20rSJ4E54QtxQ",
+      "date": {
+        "start_date": "May 2023",
+        "end_date": "Sep 2023",
+        "duration": {
+          "years": 0,
+          "months": 5
+        }
+      },
+      "location": null,
+      "description": "Evaluation Setup &amp; Configuration<br>&#x2022; Implement and maintain the testing infrastructure to run AutoAI-for-Text in multiple configurations and datasets<br>&#x2022; Log and track cost metrics alongside performance indicators for each experimental run<br><br>Comprehensive Testing &amp; Benchmarking<br>&#x2022; Design and execute end-to-end benchmark evaluations of AutoAI-for-Text across diverse datasets and parameter settings<br>&#x2022; Analyze throughput, accuracy, latency, and resource utilization to assess system behavior<br><br>Comparative System Analysis<br>&#x2022; Integrate and benchmark competing AutoAI solutions within the same framework<br>&#x2022; Compare their performance against AutoAI-for-Text to highlight relative strengths and weaknesses<br><br>Version Comparison &amp; Improvement Identification<br>&#x2022; Extend evaluations to include multiple versions of AutoAI-for-Text<br>&#x2022; Identify algorithmic enhancements and optimal use cases based on version-to-version performance differentials<br><br>Results Synthesis &amp; Reporting<br>&#x2022; Summarize and interpret benchmarking outcomes, highlighting key insights and performance trends<br>&#x2022; Document user-facing gaps, usability issues, and potential areas for optimization in AutoAI-for-Text<br>&#x2022; Prepare clear, actionable reports and presentations for stakeholders detailing findings and recommendations<br><br>Infrastructure Automation &amp; Scalability<br>&#x2022; Implement Terraform/Kubernetes pipelines for reproducible benchmarking clusters<br>&#x2022; Configure autoscaling to optimize resources<br><br>Cross-Functional Collaboration<br>&#x2022; Integrate benchmark tools into CI/CD with data engineering and platform teams<br>&#x2022; Align evaluation criteria with product and research stakeholders<br><br>Documentation &amp; Knowledge Sharing<br>&#x2022; Produce technical runbooks, setup guides, and troubleshooting docs<br>&#x2022; Lead training sessions to onboard team members on benchmarking processes<br><br>Continuous Improvement &amp; Innovation<br>&#x2022; Research advanced analytics for deeper performance insights<br>&#x2022; Prototype adversarial testing to evaluate robustness"
+    },
+    {
+      "title": "Rochester Institute of Technology, Dubai (RIT Dubai)",
+      "company_name": "Rochester Institute of Technology, Dubai (RIT Dubai)",
+      "company_link": "https://ae.linkedin.com/school/rit-university-in-dubai/?trk=public_profile_experience-group-header",
+      "image_url": null,
+      "date": {
+        "start_date": null,
+        "end_date": null,
+        "duration": {
+          "years": 0,
+          "months": 0
+        }
+      },
+      "location": null,
+      "description": null
+    },
+    {
+      "title": "Mentor and Calculus/Physics/Programming teacher",
+      "company_name": "Self Employed",
+      "company_link": "https://www.linkedin.com/company/indpendent-contractor",
+      "image_url": "https://media.licdn.com/dms/image/v2/D4E0BAQEm61LvFDQ0Gg/company-logo_100_100/B4EZaIZV7PGQAQ-/0/1746045069009/indpendent_contractor_logo?e=2147483647&v=beta&t=v3Brq8GgADBwaNeNP1ekwKk8DugT_cWMwDYtBnn_jn0",
+      "date": {
+        "start_date": "Jul 2019",
+        "end_date": "Jul 2023",
+        "duration": {
+          "years": 4,
+          "months": 0
+        }
+      },
+      "location": null,
+      "description": null
+    },
+    {
+      "title": "Expo AccessAbilities Exhibitor EyeTyping Innovation",
+      "company_name": "Expo City Dubai",
+      "company_link": "https://ae.linkedin.com/company/expocitydubai",
+      "image_url": "https://media.licdn.com/dms/image/v2/D4D0BAQHF5LtbP6-8mw/company-logo_100_100/B4DZWjDViUHABY-/0/1742197316716/expocitydubai_logo?e=2147483647&v=beta&t=JMk5eYRFz_Z_NkJny6DYD2b2xioT1B96Z9JbiFDMpVQ",
+      "date": {
+        "start_date": "Nov 2022",
+        "end_date": "Nov 2022",
+        "duration": {
+          "years": 0,
+          "months": 1
+        }
+      },
+      "location": null,
+      "description": "Project Leadership &amp; Representation<br><br>&#x2022; Selected as university representative at Expo AccessAbilities in Dubai for outstanding dedication to inclusive technology<br>&#x2022; Collaborated with multidisciplinary teams to plan, prototype, and demonstrate solutions for individuals with special needs<br><br>Assistive Technology Development<br><br>&#x2022; Designed and engineered an eye-typing device that enables users to input text solely through eye movements<br>&#x2022; Integrated computer vision algorithms, infrared tracking hardware, and custom software for real-time gaze detection<br>&#x2022; Conducted iterative user testing with people requiring assistive communication tools to refine accuracy and usability<br><br>Technical Innovation &amp; Problem Solving<br><br>&#x2022; Architected end-to-end hardware and software stack, including sensor calibration, signal processing, and user interface design<br>&#x2022; Implemented robust error-correction routines and adaptive machine learning models to accommodate varied user behaviors<br>&#x2022; Ensured device reliability and low latency through optimized embedded system programming<br><br>Inclusivity &amp; Impact<br><br>&#x2022; Championed user-centered design principles to create a solution that empowers non-verbal and motor-impaired individuals<br>&#x2022; Presented findings and live demonstrations at the expo, eliciting positive feedback from accessibility experts and attendees<br>&#x2022; Gained a deep appreciation for the role of empathy in engineering, driving future commitments to compassionate innovation"
+    },
+    {
+      "title": "Senior Machine Learning Engineer",
+      "company_name": "Google",
+      "company_link": "https://www.linkedin.com/company/google",
+      "image_url": "https://media.licdn.com/dms/image/v2/C4D0BAQHiNSL4Or29cg/company-logo_100_100/company-logo_100_100/0/1631311446380?e=2147483647&v=beta&t=fpIR4mVp092kTPQiY9WCtffmz9qUqsnLCSfc0In3daE",
+      "date": {
+        "start_date": "Apr 2022",
+        "end_date": "Aug 2022",
+        "duration": {
+          "years": 0,
+          "months": 4
+        }
+      },
+      "location": null,
+      "description": "Real-Time Fraud Detection &amp; Prevention<br>&#x2022; Designed and deployed a machine learning pipeline for real-time detection of fraudulent transactions across Google&#x2019;s payment ecosystem<br>&#x2022; Engineered feature extraction modules leveraging behavioral analytics, device fingerprinting, and anomaly detection techniques<br>&#x2022; Implemented ensemble models (GBDT, neural nets, and autoencoders) to achieve sub-second inference, safeguarding millions of user accounts<br>&#x2022; Scaled the system to process billions of events per day on Google Cloud, reducing fraud loss by over 30% while maintaining high precision and recall<br><br>Google Translate Quality Improvement<br>&#x2022; Led model-optimization initiatives to boost translation accuracy and fluency across 100+ language pairs<br>&#x2022; Integrated contextual embeddings and domain-adaptive fine-tuning to reduce mistranslations of idiomatic and technical text, achieving a 15% improvement in BLEU scores<br>&#x2022; Collaborated with linguists and localization teams to gather real-world corpora and validate model outputs against human-annotated benchmarks<br><br>Neural Network Upgrades &amp; Cross-Platform Integration<br>&#x2022; Architected and upgraded core neural network infrastructure underpinning seamless data exchange between Google services and Instagram&#x2019;s platform APIs<br>&#x2022; Migrated model training workloads to TPU clusters and implemented distributed data parallelism, cutting training time by 40%<br>&#x2022; Optimized inference pipelines for low-latency image and text processing, enabling real-time content moderation and recommendation features across apps<br><br>Cross-Functional Leadership &amp; Knowledge Sharing<br>&#x2022; Presented technical deep dives at Google Tech Talks and contributed to internal ML frameworks, promoting best practices in model development and deployment<br>&#x2022; Mentored junior engineers through code reviews, brown-bag sessions, and hackathons, fostering a culture of innovation and continuous learning"
+    },
+    {
+      "title": "Tech-Mentor and Design Thinker-Mentor",
+      "company_name": "Teens in AI",
+      "company_link": "https://uk.linkedin.com/company/teensinai",
+      "image_url": "https://media.licdn.com/dms/image/v2/C560BAQHwdh7rBw4poQ/company-logo_100_100/company-logo_100_100/0/1658484901437/teensinai_logo?e=2147483647&v=beta&t=ikqwWwEmJoLL5tO21sLwcDTnNBV4gQ2Chwergm6gjwc",
+      "date": {
+        "start_date": "Jan 2021",
+        "end_date": "Aug 2022",
+        "duration": {
+          "years": 1,
+          "months": 7
+        }
+      },
+      "location": null,
+      "description": null
+    },
+    {
+      "title": "One of the Founders of Ozger Academy and its Physics/Programming teacher",
+      "company_name": "Ozger academy",
+      "company_link": null,
+      "image_url": "https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f",
+      "date": {
+        "start_date": "Nov 2020",
+        "end_date": "Mar 2022",
+        "duration": {
+          "years": 1,
+          "months": 4
+        }
+      },
+      "location": null,
+      "description": "Advanced Curriculum &amp; Instruction<br>&#x2022; Develop and teach rigorous, university-level and AP-standard courses across STEM and humanities subjects<br>&#x2022; Implement differentiated learning pathways tailored to individual student strengths and goals<br>&#x2022; Utilize data-driven assessments to monitor progress, adapt lesson plans, and accelerate mastery of complex concepts<br><br>University Admissions Coaching<br>&#x2022; Guide students through targeted university selection, application strategy, and personal statement development<br>&#x2022; Conduct mock interviews, portfolio reviews, and standardized test simulations<br>&#x2022; Leverage industry insights and alumni networks to connect students with top-50 QS-ranked institutions<br><br>Proven Student Outcomes<br>&#x2022; 83% acceptance rate to top-50 QS-ranked universities: 10 out of 12 students admitted to world-leading institutions<br>&#x2022; 80% AP success rate: four- or five-score achievements on AP exams across multiple subjects<br>&#x2022; Consistent year-over-year improvements in student confidence, critical thinking, and academic performance<br><br>Data-Driven Results Tracking<br>&#x2022; Maintain comprehensive performance dashboards to track admissions metrics, exam scores, and course completion rates<br>&#x2022; Analyze cohort data to refine instructional strategies and resource allocation<br><br>Collaborative Learning Environment<br>&#x2022; Foster a supportive, interactive classroom culture emphasizing peer collaboration and mentorship<br>&#x2022; Organize workshops, guest lectures, and study groups featuring university professors and industry experts<br><br>Continuous Improvement &amp; Innovation<br>&#x2022; Regularly update course content to align with evolving AP exam formats and university admission criteria<br>&#x2022; Integrate educational technology tools&#x2014;adaptive learning platforms, interactive simulations, and virtual labs&#x2014;to enhance engagement<br><br><br>Learn more about our academy and student success stories:<br>[https://www.instagram.com/ozger.tutoring/](https://www.instagram.com/ozger.tutoring/)"
+    },
+    {
+      "title": "One of the Co-Founders of Astro-Step Academy and it's mentors",
+      "company_name": "AstroStep.kz",
+      "company_link": null,
+      "image_url": "https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f",
+      "date": {
+        "start_date": "Jul 2020",
+        "end_date": "Jan 2022",
+        "duration": {
+          "years": 1,
+          "months": 6
+        }
+      },
+      "location": null,
+      "description": null
+    },
+    {
+      "title": "Senior Developer Python/C++",
+      "company_name": "Yandex",
+      "company_link": "https://ru.linkedin.com/company/yandex",
+      "image_url": "https://media.licdn.com/dms/image/v2/C560BAQExT729lfsbuA/company-logo_100_100/company-logo_100_100/0/1630655185029/yandex_logo?e=2147483647&v=beta&t=oj_sKewb0jwU1YLHqFx11zrvcEuW7RW8hrA-Aa-ykn4",
+      "date": {
+        "start_date": "Mar 2021",
+        "end_date": "Jun 2021",
+        "duration": {
+          "years": 0,
+          "months": 4
+        }
+      },
+      "location": null,
+      "description": "Project Portfolio Management &amp; Application Oversight<br>&#x2022; Oversee development, deployment, and maintenance of 8+ production applications spanning ride-hailing, logistics, internal tools, and customer-facing services<br>&#x2022; Implement robust monitoring and alerting with Prometheus and Grafana to maintain 99.9% uptime and rapidly address incidents<br>&#x2022; Coordinate cross-functional sprints, prioritize feature backlogs, and align deliverables with business goals and stakeholder expectations<br>&#x2022; Standardize CI/CD pipelines using Jenkins and GitLab CI, reducing release cycle time by 40% and decreasing rollback incidents by 60%<br><br>Yandex.Taxi Platform Upgrades<br>&#x2022; Spearhead a major upgrade of the Yandex.Taxi mobile and dispatch systems, incorporating new pricing algorithms, dynamic routing, and enhanced driver-rider matching logic<br>&#x2022; Migrate monolithic services to a microservices architecture using Docker and Kubernetes, improving scalability to handle 2&#xD7; peak traffic during rush hours<br>&#x2022; Optimize API performance by refactoring endpoints, introducing Redis caching, and fine-tuning database queries, resulting in 25% faster response times<br>&#x2022; Integrate real-time analytics dashboards for operations teams, providing live KPIs on ride volumes, acceptance rates, and revenue trends<br>&#x2022; Ensure compliance with regional regulations and data-privacy standards (GDPR, local transport authority requirements) through secure data handling and encryption<br><br>Mentorship &amp; Team Development<br>&#x2022; Recruit, onboard, and train a cohort of 6 junior engineers, designing a structured mentorship program with pair-programming, code reviews, and bi-weekly knowledge-share sessions<br>&#x2022; Assign project tasks, set clear performance objectives, and provide continuous feedback&#x2014;reducing new-hire ramp-up time from 3 months to 6 weeks<br>&#x2022; Organize internal tech talks and workshops on best practices in microservices, cloud infrastructure, and software testing frameworks"
+    },
+    {
+      "title": "Martial Arts Instructor",
+      "company_name": "AJS Jiu Jitsu",
+      "company_link": null,
+      "image_url": "https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f",
+      "date": {
+        "start_date": "Jul 2018",
+        "end_date": "Aug 2019",
+        "duration": {
+          "years": 1,
+          "months": 1
+        }
+      },
+      "location": null,
+      "description": null
+    }
   ],
-  "positions_current": [],
-  "career": [],
-  "projects": [],
-  "research_areas": [],
-  "publications": [],
-  "awards": [],
-  "achievements_other": [],
-  "analytics": {
-    "growth": {
-      "years": [
-        2019,
-        2020,
-        2021,
-        2022,
-        2023,
-        2024
-      ],
-      "projects": [
-        2,
-        4,
-        7,
-        12,
-        18,
-        24
-      ],
-      "publications": [
-        0,
-        1,
-        3,
-        6,
-        9,
-        12
-      ],
-      "team_size": [
-        1,
-        3,
-        6,
-        10,
-        15,
-        22
-      ]
+  "education": [
+    {
+      "university_name": "Rochester Institute of Technology, Dubai (RIT Dubai)",
+      "university_link": "https://ae.linkedin.com/school/rit-university-in-dubai/?trk=public_profile_school_profile-section-card_image-click",
+      "image_url": "https://media.licdn.com/dms/image/v2/C4D0BAQHy0grie22Wiw/company-logo_100_100/company-logo_100_100/0/1655875932291/rit_university_in_dubai_logo?e=2147483647&v=beta&t=1BKCc8m6ZcZskq_JIdqRDr-FmkZCASJpoCm5uDXdpgA",
+      "degree": "Bachelor's degree",
+      "major": "Mathematics and Computer Science",
+      "date": {
+        "start_date": "2020",
+        "end_date": "2024"
+      }
     },
-    "skills_distribution": {
-      "AI/ML": 80,
-      "Cloud": 70,
-      "Leadership": 75,
-      "Research": 65
+    {
+      "university_name": "The Coding School",
+      "university_link": "https://www.linkedin.com/school/the-coding-school/?trk=public_profile_school_profile-section-card_image-click",
+      "image_url": "https://media.licdn.com/dms/image/v2/C4E0BAQH3rmlEnBTL_Q/company-logo_100_100/company-logo_100_100/0/1679948453804/the_coding_school_logo?e=2147483647&v=beta&t=gg9zW6fdghGhZQeTAug3LMq8XUnrE0OTZFKfMHnr0tU",
+      "degree": "Engineer's degree",
+      "major": "Quantum Computing",
+      "date": {
+        "start_date": "2020",
+        "end_date": "2021"
+      }
     },
-    "lifetime_stats": [
-      [
-        "Patents",
-        "—",
-        "📋",
-        ""
-      ],
-      [
-        "Publications",
-        "—",
-        "📚",
-        ""
-      ],
-      [
-        "Projects",
-        "—",
-        "💡",
-        ""
-      ],
-      [
-        "Awards",
-        "—",
-        "🏆",
-        ""
-      ]
-    ]
-  }
+    {
+      "university_name": "National School of Physics & Math (FIZMAT)",
+      "university_link": "https://kz.linkedin.com/school/fizmat/?trk=public_profile_school_profile-section-card_image-click",
+      "image_url": "https://media.licdn.com/dms/image/v2/C4E0BAQGe58Tf7hN0uw/company-logo_100_100/company-logo_100_100/0/1651745591433?e=2147483647&v=beta&t=96hZPATqHzYfKMZFLAbYokgxgHvVmRV5ABbyp-D81As",
+      "degree": "High School Diploma",
+      "major": "5.0 out of 5.0 scale with distinction",
+      "date": {
+        "start_date": "2016",
+        "end_date": "2020"
+      }
+    }
+  ],
+  "certifications": [
+    {
+      "image_url": "",
+      "title": "Machine Learning",
+      "course_link": "https://www.coursera.org/account/accomplishments/certificate/6N7NQJ2MG6FF?trk=public_profile_see-credential",
+      "issuer": "Stanford University",
+      "issued_date": "Oct 2020 Credential ID 6N7NQJ2MG6FF",
+      "credential": "6N7NQJ2MG6FF"
+    },
+    {
+      "image_url": "",
+      "title": "Cloud Architecture with Google Cloud Specialization",
+      "course_link": "https://www.coursera.org/account/accomplishments/specialization/certificate/JHL9JF3WQ7QY?trk=public_profile_see-credential",
+      "issuer": "Google Cloud (NJ)",
+      "issued_date": "Oct 2020 Credential ID JHL9JF3WQ7QY",
+      "credential": "JHL9JF3WQ7QY"
+    },
+    {
+      "image_url": "",
+      "title": "Cloud Engineering with Google Cloud Specialization",
+      "course_link": "https://www.coursera.org/account/accomplishments/specialization/certificate/LM6LTD99ST3L?trk=public_profile_see-credential",
+      "issuer": "Google Cloud (NJ)",
+      "issued_date": "Oct 2020 Credential ID LM6LTD99ST3L",
+      "credential": "LM6LTD99ST3L"
+    },
+    {
+      "image_url": "",
+      "title": "Data Engineering with Google Cloud Specialization",
+      "course_link": "https://www.coursera.org/account/accomplishments/specialization/certificate/7K8WUNYLW5TT?trk=public_profile_see-credential",
+      "issuer": "Google Cloud (NJ)",
+      "issued_date": "Oct 2020 Credential ID 7K8WUNYLW5TT",
+      "credential": "7K8WUNYLW5TT"
+    },
+    {
+      "image_url": "",
+      "title": "Astro 101: Black Holes",
+      "course_link": "https://www.coursera.org/account/accomplishments/certificate/PSRUEBLG8BU8?trk=public_profile_see-credential",
+      "issuer": "University of Alberta",
+      "issued_date": "Sep 2020 Credential ID PSRUEBLG8BU8",
+      "credential": "PSRUEBLG8BU8"
+    },
+    {
+      "image_url": "",
+      "title": "Google IT Automation with Python Specialization",
+      "course_link": "https://www.coursera.org/account/accomplishments/specialization/certificate/439U2DRG7CBJ?trk=public_profile_see-credential",
+      "issuer": "Google",
+      "issued_date": "Sep 2020 Credential ID 439U2DRG7CBJ",
+      "credential": "439U2DRG7CBJ"
+    },
+    {
+      "image_url": "",
+      "title": "IT Fundamentals for Cybersecurity Specialization",
+      "course_link": "https://www.coursera.org/account/accomplishments/specialization/certificate/W3SLS7WNDW68?trk=public_profile_see-credential",
+      "issuer": "IBM",
+      "issued_date": "Sep 2020 Credential ID W3SLS7WNDW68",
+      "credential": "W3SLS7WNDW68"
+    },
+    {
+      "image_url": "",
+      "title": "Security Analyst Fundamentals Specialization",
+      "course_link": "https://www.coursera.org/account/accomplishments/specialization/certificate/X4P3NHJMT9BF?trk=public_profile_see-credential",
+      "issuer": "IBM",
+      "issued_date": "Sep 2020 Credential ID X4P3NHJMT9BF",
+      "credential": "X4P3NHJMT9BF"
+    },
+    {
+      "image_url": "",
+      "title": "Coding for Everyone: C and C++ Specialization",
+      "course_link": "https://www.coursera.org/account/accomplishments/specialization/certificate/Y65ZD2M7KMVB?trk=public_profile_see-credential",
+      "issuer": "University of California, Santa Cruz",
+      "issued_date": "Sep 2020 Credential ID Y65ZD2M7KMVB",
+      "credential": "Y65ZD2M7KMVB"
+    },
+    {
+      "image_url": "",
+      "title": "Google IT Support Specialization",
+      "course_link": "https://www.coursera.org/account/accomplishments/specialization/certificate/EQLV3SWATCAL?trk=public_profile_see-credential",
+      "issuer": "Google",
+      "issued_date": "Sep 2020 Credential ID EQLV3SWATCAL",
+      "credential": "EQLV3SWATCAL"
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "description": "Native or bilingual proficiency"
+    },
+    {
+      "name": "Russian",
+      "description": "Native or bilingual proficiency"
+    },
+    {
+      "name": "Kazakh",
+      "description": "Native or bilingual proficiency"
+    },
+    {
+      "name": "French",
+      "description": "Elementary proficiency"
+    },
+    {
+      "name": "Ukrainian",
+      "description": "Limited working proficiency"
+    },
+    {
+      "name": "Turkish",
+      "description": "Elementary proficiency"
+    }
+  ],
+  "volunteerings": [],
+  "publications": [
+    {
+      "title": "Study of the hydrocarbon-oxidizing activity of Bacillus subtillus on different substrates.",
+      "publisher": "MSI",
+      "publication_link": null,
+      "publication_date": "May 3, 2017",
+      "description": "Bioremediation of hydrocarbon-contaminated environments using native microorganisms is a promising strategy for addressing oil pollution in Kazakhstan’s oil-producing areas. This study evaluated the hydrocarbon-oxidizing activity of a Bacillus subtilis strain. Twenty-three isolates were obtained by enrichment culture from oil-saturated soils at the Zhetibai field in the Mangystau region. Cultural, morphological, and biochemical tests following Bergey’s Manual confirmed the identity of the chosen strain as B. subtilis.Its ability to use crude oil and diesel fuel as sole carbon sources was tested in liquid Luria–Bertani medium supplemented with either Zhetibai crude oil or commercial diesel (C₁₃–C₁₈ hydrocarbons, boiling range 200–330 °C). Cultures were incubated aerobically at pH 6.5–7.0, 200 rpm, for 96 hours. Growth was monitored turbidimetrically by measuring optical density at 600 nm to quantify biomass accumulation and substrate utilization. This 96-hour experiment provided detailed insights into growth kinetics and substrate preferences under controlled laboratory conditions.Results showed robust growth of B. subtilis in both media, confirming its biodegradation potential. Diesel-supplemented cultures exhibited a shorter lag phase and higher peak optical density than crude oil cultures, indicating that diesel components are more readily assimilated. These observations reflect differences in hydrocarbon chain length and structure that influence microbial uptake and metabolism.Overall, indigenous B. subtilis strains demonstrate significant potential for degrading petroleum hydrocarbons in contaminated soils. Incorporating these organisms into a tailored microbial consortium could enhance pollutant-removal efficiency. Bioremediation using native bacteria offers an eco-friendly, biologically safe complement to mechanical and chemical cleanup methods, reducing residual contamination while preserving the ecological balance of affected regions."
+    },
+    {
+      "title": "Detecting Various Writing Styles in Documents Through Inherent Stylometric Analysis",
+      "publisher": "IEEE",
+      "publication_link": null,
+      "publication_date": null,
+      "description": "In this project, we have developed an intelligent system that takes a single document and classifies different writing styles within the document using stylometric analysis. The classification is done using K-Means Clustering (an unsupervised machine learning method). First, the document is divided into chunks of text using a standard chunk size. Then, for each chunk of text, a vector of stylometric features is computed. After that, the chunks are clustered using their vectors of stylometric features. This is where unsupervised machine learning comes into play. The chunks with the same style are clustered together, and the number of clusters made corresponds to the number of different writing styles that the document has. In this approach, the value of K is determined using the Elbow Method. We also ran an experiment for a document with two writing styles, and our system successfully identified that the document had two different writing styles. Our approach separates out text with the same style from that of different styles and can be used to detect plagiarism as well."
+    },
+    {
+      "title": "IoT and AI Applications for Healthcare Diagnostics",
+      "publisher": "IEEE",
+      "publication_link": null,
+      "publication_date": null,
+      "description": "This comprehensive report investigates the innovative use of Internet of Things (IoT) and Artificial Intelligence (AI) technologies in the realm of healthcare diagnostics. The primary objective is to leverage these cutting-edge technologies to enhance the sustainability of healthcare systems by enabling precise and timely diagnosis of medical conditions. The report explores the methodology, results, and implications of integrating IoT and AI in healthcare, while also shedding light on potential research directions for further advancement."
+    }
+  ],
+  "projects": [
+    {
+      "name": "AutoTrade - Comprehensive Automotive Dealership Management Revolution",
+      "date": {
+        "start_date": "Jun 2025",
+        "end_date": null
+      },
+      "description": "Developed comprehensive web-based car dealership management system streamlining inventory tracking, payment processing, and business analytics for automotive retail operations across Kazakhstan.Critical Problems Addressed:✅ Manual Inventory Tracking: Paper-based systems causing errors and inefficiencies✅ Payment Status Confusion: Difficulty tracking paid vs unpaid vehicles✅ Multi-Dealership Coordination: Managing 33+ partner dealerships simultaneously✅ Real-Time Reporting: Need for instant analytics and Excel export capabilitiesCore Features:✅ Multi-User Authentication: Role-based access (Managers vs Leadership)✅ Vehicle Inventory Management: 5 car categories with automated pricing (50K-300K range)✅ Payment Status Tracking: Real-time updates with user attribution✅ Advanced Analytics: KPIs, manager performance metrics, revenue forecastingTechnical Innovation:✅ SQLite Database: Robust data persistence with relationship management✅ Excel Export Engine: Professional reports with styling and color coding✅ Real-Time Updates: Instant UI refresh for payment status changes✅ Responsive Design: Optimized for desktop and mobile operationsBusiness Intelligence:- Revenue forecasting with predictive analytics- Manager performance tracking and efficiency scoring- Dealership rankings and comparative analysis- Visual reporting with interactive charts and trendsImpact Results:- 50% Faster Processing: Reduced inventory and payment management time- 95% Data Accuracy: Eliminated manual errors through automation- Real-Time Visibility: Instant sales performance and payment insights- Streamlined Operations: Unified platform replacing manual processes"
+    },
+    {
+      "name": "Carso - AI-Powered Auto Parts Trading Platform",
+      "date": {
+        "start_date": "May 2025",
+        "end_date": "Present"
+      },
+      "description": "Revolutionary auto parts marketplace connecting buyers, suppliers, and administrators through intelligent digital platform with real-time trading capabilities.🚀 Key Features:✅ Three-Tier Smart Architecture: Seamless customer-supplier-admin integration ✅ Multi-Channel Verification: SMS, Email, WhatsApp, Telegram registration ✅ Intelligent Part Matching: AI-powered vehicle specification and identification ✅ Real-Time Response System: WebSocket instant supplier notifications ✅ Automated Delivery: Yandex.Delivery integration with cost calculation ✅ Analytics Dashboard: Comprehensive transaction monitoring Problem AddressedTraditional auto parts trading suffers from fragmented marketplace, manual processes, delayed communication, and poor transparency. 40% of searches fail, 3-5 day response times, 25% delivery delays.Technical Advantages- Backend: Python 3.8+ Flask framework with PostgreSQL- Real-time: Flask-SocketIO WebSocket communication - Security: Multi-layer authentication, encrypted transactions- Payments: 3D-Secure cards, Kaspi Pay, cash delivery- Architecture: Modular design with pytest testingMarket OpportunityTAM: $45B global automotive aftermarket SAM: $12B Central Asian markets SOM: $180M achievable 3-5 year targetImpact- 70% reduction in part sourcing time- 25% average price reduction through competition - 95% customer satisfaction- Network effects enabling small supplier competitionRevolutionary transformation of automotive parts trading through intelligent automation and real-time digital marketplace."
+    },
+    {
+      "name": "KIC",
+      "date": {
+        "start_date": "May 2025",
+        "end_date": null
+      },
+      "description": null
+    },
+    {
+      "name": "XG SONIC - Universal Network Speed Optimization Revolution",
+      "date": {
+        "start_date": "Feb 2025",
+        "end_date": null
+      },
+      "description": "Main Author. Developed revolutionary AI-powered speed optimization system for 5G, 6G, and beyond networks, delivering unprecedented performance improvements through intelligent automation and predictive analytics.Revolutionary Speed Achievements:✅ 66% Latency Reduction: 10ms → 3.4ms average latency breakthrough✅ 150% Throughput Increase: Maximum network capacity during peak conditions✅ 30% Energy Savings: Green speed optimization without performance compromise✅ 95% Anomaly Prevention: Proactive issue detection before user impactCore Innovation:✅ Universal Compatibility: Works with ANY network generation (5G/6G/Beyond)✅ Multi-Vendor Support: Seamless integration with existing infrastructure✅ Microsecond Decisions: Faster than speed problems can develop✅ Self-Learning AI: Continuous improvement through global network experienceAdvanced AI Technologies:LSTM Networks: Predictive speed optimization 15-30 minutes aheadCNN Architecture: Real-time network topology analysisDeep Neural Networks: Ultra-fast anomaly detection (<10 seconds)Integrated Learning: Multi-model ensemble for maximum performanceMarket Impact:$4T+ Addressable Market: Combined 5G/6G/Beyond opportunity through 2040300-500% ROI: Proven returns within first year of deploymentGlobal Scalability: 100,000+ network elements per deploymentZero Downtime: Speed improvements without service interruptionBusiness Model:SaaS Platform: $25K-$500K/month tiered pricingPerformance-Based: Pay-for-results with guaranteed improvementsEnterprise Ready: Carrier-grade reliability (99.9% uptime)Competitive Advantages:✅ 2-3 Year Head Start: First-mover advantage in AI-driven speed optimization✅ Proven Technology: Production deployments across multiple countries✅ Patent Protection: Defensible intellectual property portfolio✅ Future-Ready: 6G preparation with beyond-generation compatibility"
+    },
+    {
+      "name": "Aleem - AI-Powered EdTech Web3 Language Learning Revolution",
+      "date": {
+        "start_date": "Jan 2025",
+        "end_date": null
+      },
+      "description": "Revolutionary language learning platform addressing the $300B education market's core problems through AI-driven personalized instruction and Web3 tokenomics, transforming how people achieve fluency.Problems Solved:✅ Traditional Education Issues: 10% retention, corruption, bureaucracy, outdated methods✅ EdTech Limitations: 1.7% retention, entertainment over results, 200B hours/year wasted✅ Learning Barriers: Grammar focus instead of practical communication, zero personalization✅ Lack of Transparency: No input-output clarity, profits prioritized over student resultsRevolutionary Solutions:✅ 7-Day Fluency Confidence: Rapid progress through AI-optimized learning paths✅ 50% Error Reduction: Instant AI feedback cutting learning mistakes in half✅ 24/7 Availability: Speaking practice on user's schedule with AI buddy✅ Earn While Learning: Web3 tokenomics rewarding educational progressProven Traction:300M+ reach from single account in 1 year300K followers organically without paid advertising3000+ clients from 35 countries with zero ad spend$200K revenue in 3 years during beta testingTESOL/CELTA certified expert teamMarket Leadership:EdTech Market: $810.3B forecasted by 2033 (13.9% CAGR)2Earn Market: $10B market cap with growing adoptionCompetitive Edge: AI-powered vs traditional gamification (Duolingo 50% market share)Social Impact:✅ Carbon Reduction: 85% less CO₂ emissions vs traditional learning (36kg vs 278kg per 100 hours)✅ Global Accessibility: 242K tons CO₂ saved if 1M learners switch to AI apps✅ Educational Equity: Charity program funding internet/devices for underprivileged learners✅ Research Contribution: Data sharing with scientists for education improvement"
+    },
+    {
+      "name": "",
+      "date": null,
+      "description": null
+    },
+    {
+      "name": "",
+      "date": null,
+      "description": null
+    },
+    {
+      "name": "Hyperports - Blockchain Port Operations Platform",
+      "date": {
+        "start_date": "Jul 2024",
+        "end_date": null
+      },
+      "description": "Main Author. Developed comprehensive blockchain-based platform revolutionizing port operations through immutable Smart Bill of Lading (B/L) management and transparent supply chain tracking.System Architecture:✅ Hyperledger Fabric Integration: Enterprise-grade blockchain for secure transactions✅ Smart B/L Creation: Digital bills of lading with blockchain immutability✅ Multi-Party Workflow: Seamless coordination between issuers, shippers, consignees, delivery agents✅ Document Management: Upload existing B/Ls or create new smart contractsKey Features:Immutable Records: All transactions permanently recorded on blockchainRole-Based Access: Secure permissions for different stakeholdersReal-time Tracking: Live status updates throughout shipping processDigital Signatures: Cryptographic proof of agreements and transfersAutomated Workflows: Smart contract execution for process automationComplete Transaction Flow:Issuer Creation: Smart B/L creation with shipment detailsParty Assignment: Role allocation (shipper, consignee, delivery agent)Digital Signing: Blockchain-recorded agreement confirmationsPayment Tracking: Secure payment confirmation loggingStatus Updates: Real-time shipment progress monitoringCompletion Archive: Final delivery confirmation and record storageBenefits:Enhanced transparency across supply chainReduced fraud through immutable recordsStreamlined port operations and reduced paperworkImproved accountability with complete audit trailsFaster processing times and reduced administrative costs"
+    },
+    {
+      "name": "",
+      "date": null,
+      "description": null
+    },
+    {
+      "name": "HeartShaper - AI-Powered Relationship Intelligence Platform",
+      "date": {
+        "start_date": "Jan 2024",
+        "end_date": null
+      },
+      "description": "Main Author. Developed comprehensive AI-driven relationship counseling platform providing personalized guidance, conflict resolution, and emotional intelligence development for individuals and couples worldwide.Critical Problems Addressed:✅ Therapy Accessibility: 67% can't access professional relationship counseling✅ High Costs: Traditional therapy $100-200/session, limiting accessibility✅ Stigma Barriers: 43% avoid seeking help due to social stigma✅ Immediate Support: Relationship crises need real-time guidance, not appointmentsAI-Powered Solutions:✅ 24/7 Relationship Coach: Instant, personalized relationship guidance✅ Conflict Resolution Engine: Step-by-step mediation protocols for disputes✅ Emotional Intelligence Training: Personalized communication improvement programs✅ Compatibility Analysis: Advanced algorithms assessing relationship dynamicsCore Features:Natural Language Processing with emotional context understandingReal-time sentiment analysis and appropriate response generationPersonalized action plans for relationship improvementCrisis intervention protocols for relationship emergenciesProven Impact:89% report improved communication within 30 days73% success rate in guided dispute mediation45% reduction in breakup rates among users95% more affordable than traditional couples therapyMarket Opportunity:Global therapy market: $4.2B annually (15% growth)Digital mental health: $5.6B → $26B by 20302.3B adults in relationships seeking guidance globallyCompetitive Advantages:✅ Evidence-based approach using proven psychological methodologies✅ Real-time availability during relationship crises✅ Scalable personalization adapting to individual communication styles✅ Democratized access regardless of economic status"
+    },
+    {
+      "name": "ShareTalk",
+      "date": {
+        "start_date": "Nov 2023",
+        "end_date": null
+      },
+      "description": null
+    },
+    {
+      "name": "Shyndyq: Plagiarism detector based on AI and Neural Network.",
+      "date": {
+        "start_date": "May 2023",
+        "end_date": null
+      },
+      "description": "Main Author. Developed advanced AI-based plagiarism detection system addressing modern academic integrity challenges through innovative writing style memorization and comprehensive analysis capabilities.Core Innovation:✅ Writing Style Memorization: AI learns and differentiates individual writing patterns✅ Multi-Source Detection: Identifies not just plagiarism sources but specific contributors✅ Advanced AI Recognition: Detects and identifies specific AI tools used in content creation✅ Comprehensive File Support: Analyzes compressed files and multiple document formatsProblem Addressed:Rise in AI-generated academic content (ChatGPT, paraphrasing tools)Traditional plagiarism checkers inadequate for modern threatsNeed for sophisticated detection beyond simple text matchingTechnical Advantages:✅ IEEE-Verified Methodology: Academically validated approach✅ Cross-Platform Compatibility: Universal accessibility across devices✅ Image Text Recognition: Extracts and analyzes text from images✅ Tutor Decision Support: Provides analysis while maintaining human oversightMarket Opportunity:TAM: $300 million (global academic institutions)SAM: $70 million (accessible educational market)SOM: $3 million (realistic obtainable market)Evolution Roadmap:AI-based plagiarism detection foundationMulti-format file analysis expansionTechnology adaptation and upgradesOpen/closed source flexibilityCross-platform deploymentImpact: Transforms academic integrity enforcement by providing sophisticated detection capabilities that evolve with emerging AI technologies.Technologies: AI/ML, NLP, Computer Vision, Cross-platform Development, Academic Analytics"
+    },
+    {
+      "name": "",
+      "date": null,
+      "description": null
+    },
+    {
+      "name": "Meta University - VR Education Revolution",
+      "date": {
+        "start_date": "Dec 2022",
+        "end_date": null
+      },
+      "description": "Pioneered immersive VR education platform transforming learning experiences through gamification, virtual laboratories, and global accessibility.Vision & Mission:Transform educational processes by making learning joyful, effective, and accessible from anywhere in the world through cutting-edge VR technology.Core Features:✅ VR Gamification: Interactive learning environments with high engagement✅ Virtual Laboratories: Hyper-realistic scientific simulations and experiments✅ Global Accessibility: Learn from anywhere with VR headset connectivity✅ Tokenomics Integration: Learn-to-earn model incentivizing educational progressBusiness Model:B2B Segment: Annual integration payments for universities and schoolsB2C Segment: VR marketplace distribution and freemium mobile app modelMarket Opportunity:Metaverse education market: $23 billion potentialStrategic focus on 3 large institutional partnerships by 20253-Year Growth Strategy:2025: Value hypothesis validation, $5M expected valuation2026: Platform scaling and new course development, $20M valuation2027: Complete metaverse infrastructure (Meta City/University/Bank), $100B valuationChallenges Addressed:Quality education distribution through SaaS cloud technologiesSmooth VR integration with academic curriculaHealth-conscious course design with medical specialist consultationTechnologies: VR/AR, Unity, Cloud Computing, Blockchain, Gamification, Educational Technology"
+    },
+    {
+      "name": "",
+      "date": null,
+      "description": null
+    },
+    {
+      "name": "MedGPT/HealthHub/Medica - AI-Driven Comprehensive Health Monitoring",
+      "date": {
+        "start_date": "Mar 2021",
+        "end_date": null
+      },
+      "description": "Main Author. Revolutionized personal healthcare through AI-powered comprehensive monitoring system integrating wearable devices with genetic analysis for proactive health management.Core Problems Solved:✅ Incomplete health profiles and fragmented data analysis✅ Delayed medical interventions affecting quality of life✅ Limited access to unified health insights✅ Disjointed healthcare strategiesKey Solutions:✅ Real-time Monitoring: Continuous vital signs tracking through wearable integration✅ DNA Analysis Integration: Predictive disease analysis via genetic data✅ AI-Driven Insights: Personalized health recommendations and risk assessments✅ Proactive Interventions: Early warning system reducing hospital readmissionsScalability Features:Future-proof infrastructure supporting emerging wearable technologiesSeamless integration capabilities with healthcare institutionsUser-driven growth with adaptable architectureContinuous relevance through technology updatesImpact: Empowers individuals with continuous health insights, reduces hospital readmissions through early warnings, and generates potential cost savings for healthcare systems.Technologies: AI/ML, IoT, Wearable Tech, DNA Analysis, Data Encryption, Healthcare APIs"
+    },
+    {
+      "name": "CAREN: Credit Card Fraud Detection",
+      "date": {
+        "start_date": "Aug 2024",
+        "end_date": "Feb 2025"
+      },
+      "description": "Main Author. Developed sophisticated fraud detection system leveraging advanced machine learning algorithms to accurately predict and prevent fraudulent credit card transactions in real-time.Problem Addressed:Steep increase in credit card fraud causing direct financial lossesDiminished customer trust in banking institutionsNeed for robust real-time fraud identification systemsTechnical Innovation:✅ Advanced ML Algorithms: Ensemble models with hyperparameter optimization✅ Class Imbalance Handling: SMOTE and ADASYN techniques for accurate predictions✅ Precision Optimization: Balanced accuracy while minimizing false positives✅ Real-time Processing: Immediate fraud detection and prevention capabilitiesCompetitive Advantages:✅ Specialized data imbalance addressing for fraud patterns✅ Customizable precision/recall optimization based on bank profiles✅ Adaptive learning capabilities improving detection rates✅ Superior performance compared to existing FICO, SAS, NICE Actimize solutionsExpected Impact:Significant reduction in financial losses due to fraudEnhanced customer trust and satisfactionImproved operational efficiency in fraud managementData-driven decision making for financial institutionsMarket Opportunity: Targeting banks and financial institutions seeking advanced fraud prevention solutionsTechnologies: Machine Learning, Python, Fraud Detection, Financial Security, Real-time Processing"
+    },
+    {
+      "name": "STEVE - City Builder & P2P blockchain energy marketplace",
+      "date": {
+        "start_date": "Apr 2024",
+        "end_date": "Feb 2025"
+      },
+      "description": "Main Author. Developed comprehensive smart city planning system combining geospatial analysis with blockchain-based peer-to-peer energy marketplace for sustainable urban development.Phase 1 - Smart Grid Infrastructure:✅ Geospatial data processing using GeoPandas and Matplotlib✅ KMeans clustering for optimal city zoning (650-1850 houses)✅ Euclidean distance optimization for power grid connections✅ NetworkX graph implementation for infrastructure planningPhase 2 - AI City Forecasting:✅ Computer vision analysis of satellite imagery (2017-2024)✅ Predictive modeling for 2027 smart city development✅ Object detection and categorization using OpenCVPhase 3 - Blockchain Energy Trading:✅ Ethereum-based P2P energy marketplace using Web3.py✅ Solidity smart contracts for secure transactions✅ Streamlit user interface for energy trading✅ Cryptographic security with immutable blockchain recordsImpact: Created scalable framework for sustainable city development with decentralized energy economy, enabling efficient resource allocation and green energy adoption.Technologies: Python, Blockchain, Ethereum, Solidity, ML, Computer Vision, GeoPandas"
+    },
+    {
+      "name": "",
+      "date": null,
+      "description": null
+    },
+    {
+      "name": "Agile Job Description - AI-Powered Smart Recruitment Platform",
+      "date": {
+        "start_date": "Jul 2023",
+        "end_date": "Feb 2025"
+      },
+      "description": "Developed comprehensive AI-driven recruitment platform analyzing job descriptions and automatically identifying optimal candidates with precise compatibility percentages, streamlining hiring for modern businesses.Critical Problems Addressed:✅ Manual Screening: HR teams spend 80% time on candidate filtering✅ Skill Mismatching: 67% of hires don't meet job requirements✅ Selection Bias: Human prejudices affecting fair evaluation✅ Technical Assessment: Difficulty evaluating GitHub coding skillsAI-Powered Solutions:✅ Smart Job Analysis: NLP processing of job descriptions✅ Candidate Compatibility: Percentage-based eligibility scoring✅ GitHub Integration: Automated code quality analysis✅ Bias-Free Matching: Objective skills-based assessmentCore Features:- Job description parser extracting requirements and qualifications- Advanced resume analysis with NLP processing- GitHub portfolio review with automated code evaluation- Real-time compatibility dashboard with detailed breakdowns- Prioritized candidate ranking based on job fit scoresGitHub Integration:- Code quality assessment and programming standards analysis- Project contribution evaluation and collaborative experience- Technology stack matching with job requirements- Open source participation measurementProven Impact:- 75% Faster Screening: Reduced candidate review time- 90% Accuracy: Higher job-candidate compatibility predictions- 60% Better Retention: Improved employee satisfaction through matching- 50% Cost Reduction: Decreased recruitment agency dependencyMarket Opportunity:- Global recruitment market: $285B annually (7.2% growth)- AI in HR technology: $3.6B → $11.9B by 2030Competitive Advantages:✅ Eliminates human bias in initial screening✅ Unique technical skill validation for developers✅ Instant compatibility percentages for quick decisions✅ Scalable high-volume recruitment handlingTechnologies: AI/ML, NLP, GitHub API, Data Analytics, Resume Parsing, Recruitment Tech"
+    },
+    {
+      "name": "PE: P2P Pro Factoring Web3 Platform - Decentralized Invoice Marketplace",
+      "date": {
+        "start_date": "Aug 2024",
+        "end_date": "Jan 2025"
+      },
+      "description": "Main Author. Created transformative blockchain-based peer-to-peer factoring platform connecting businesses needing cash flow with global investors, eliminating traditional banking constraints.Problems Solved:✅ Delayed Payments: SMEs face crippling invoice payment delays✅ Limited Capital Access: Traditional banks exclude businesses needing funding most✅ Tied-Up Capital: Billions immobilized in unpaid invoices stifling growthInnovative Solutions:✅ Invoice Tokenization: Blockchain-secured authentic invoice representation✅ Global Investor Access: Worldwide liquidity provider marketplace✅ Smart Contract Automation: Trustless, automated transaction execution✅ Instant Liquidity: Transform unpaid invoices into immediate cashPlatform Features:NFT Invoice Representation: Real-time data with risk scoringDecentralized Risk Assessment: AI/ML-powered evaluation modelsFractionalization Support: Multiple investor participation per invoiceImmutable Records: Complete transparency through blockchain ledgerKey Benefits:For Businesses: Immediate liquidity, flexible terms, global access, cost efficiencyFor Investors: High returns, diversified opportunities, transparent insights, liquid marketsSecurity & Compliance:KYC/AML integration, regulatory compliance, insurance guaranteesMulti-layer security protocols ensuring transaction safetyImpact: Revolutionizes finance by unlocking global invoice liquidity, empowering SMEs and providing attractive investment opportunities.Technologies: Blockchain, Web3, Smart Contracts, DeFi, AI/ML, NFTs"
+    },
+    {
+      "name": "",
+      "date": null,
+      "description": null
+    },
+    {
+      "name": "AirPol: ML-Powered Environmental Monitoring",
+      "date": {
+        "start_date": "Sep 2024",
+        "end_date": "Dec 2024"
+      },
+      "description": "Developed comprehensive machine learning system for predicting PM2.5 air quality levels, addressing public health challenges and supporting urban planning initiatives across UAE regions.Problem Statement:PM2.5 pollution poses serious health risks in UAEUnique environmental challenges: sandstorms and heavy trafficNeed for accurate forecasting to aid public health and urban planningTechnical Implementation:✅ Advanced ML Models: LSTM for time-series patterns, XGBoost for complex interactions, Random Forest for robust predictions✅ Comprehensive Data Integration: 84,902 hourly entries from National Center of Meteorology, UAE Ministry of Transport, MOHAP✅ Feature Engineering: RFE-identified key predictors including temperature, traffic, and dew point✅ Multi-source Analysis: Meteorological, traffic, and public health data synthesisKey Findings:Random Forest outperformed other models (RMSE: 0.0217)Temperature and dew point identified as top predictorsPM2.5 peaks during early mornings and winter monthsStrong correlations with meteorological factorsImpact Recommendations:Stricter vehicle emission standards implementationReal-time PM2.5 forecasting system deploymentTraffic flow optimization during peak pollution periodsTechnologies: Python, LSTM, XGBoost, Random Forest, TensorFlow, Data Analytics"
+    },
+    {
+      "name": "DriveVision - Computer Vision for Driver's License Exams and Automatic Driving of car",
+      "date": {
+        "start_date": "Sep 2024",
+        "end_date": "Dec 2024"
+      },
+      "description": "Main Author. Developed cutting-edge computer vision solution for practical driving license examinations, ensuring unbiased evaluation and enhanced road safety through advanced AI algorithms.Core Capabilities:✅ Biometric Authentication: Prevents proxy test-taking through facial recognition✅ Real-time Violation Detection: Monitors seatbelt usage, speed limits, lane markings✅ Vehicle Independence: Compatible with any vehicle, eliminating test center dependencies✅ Compliance Integration: Adheres to Ministry of Internal Affairs order No. 862Technical Innovation:✅ Transformer Architecture: Advanced perception and prediction using decoder-based modules✅ Bird's-Eye-View Processing: Multi-camera unified spatial understanding✅ Query-Based System: Seamless integration of tracking and road mapping✅ Motion Prediction: Real-time trajectory forecasting for collision avoidanceAchievements:25% reduction in assessment errors during MVP demonstrationSuccessfully tested in controlled and real-world environmentsRobust performance across diverse driving conditionsEnhanced decision-making through data-driven insightsImpact: Automated, unbiased driving skill evaluation minimizing human error while significantly improving road safety assessment accuracy.Technologies: Computer Vision, Transformers, PyTorch, Multi-camera Systems, Real-time Processing"
+    },
+    {
+      "name": "Stocker - AI-Powered SMB Financial Management",
+      "date": {
+        "start_date": "Sep 2024",
+        "end_date": "Dec 2024"
+      },
+      "description": "Main Author. Created comprehensive AI-driven financial management platform specifically designed for small and medium businesses, addressing the critical cash flow mismanagement that causes 82% of SMB failures.Critical Problem Solved:82% of SMBs fail due to cash flow mismanagementDifficulty tracking money and analyzing financial dataExpensive enterprise tools inaccessible to small businessesAI-Powered Solutions:✅ Transaction Tracking: Every financial movement monitored automatically✅ Cash Flow Optimization: AI-driven insights for better financial decisions✅ Trend Visualization: Instant visual analytics and reporting✅ Predictive Analytics: Proactive financial planning and risk managementMarket Opportunity:400M SMBs globally ≈ 224M potential users65% ready to invest in AI solutions56% find current tools too costlyCompetitive Advantages:✅ Simplicity: AI-driven insights accessible to non-financial experts✅ Customization: Tailored categories for specific business needs✅ Affordability: Enterprise functionality at SMB-friendly pricing✅ Competitive Edge: Transform financial management into business advantageProven Results:Platform in beta testing with positive feedbackEarly adopters report 15% expense savings within 3 monthsSecured partnerships with accounting firms and banking API providersReal success story: Bakery owner reduced costs by 20% and accelerated growthPricing Strategy: $1.99 weekly, $9.99 monthly, $99.99 yearly based on market researchTechnologies: AI/ML, Financial APIs, Data Analytics, Cloud Computing, Business Intelligence"
+    },
+    {
+      "name": "",
+      "date": null,
+      "description": null
+    },
+    {
+      "name": "eDiploma",
+      "date": {
+        "start_date": "Jun 2023",
+        "end_date": "Jul 2024"
+      },
+      "description": "Pioneered Kazakhstan's first NFT diploma system, creating a comprehensive blockchain-based educational credential platform that revolutionizes how academic achievements are issued, verified, and managed.System Components:✅ Smart Contract Generator: Automated creation of blockchain-secured diploma contracts✅ Credential Portal: User-friendly interface for institutions and graduates✅ NFT Integration: Unique, tamper-proof digital diplomas as non-fungible tokens✅ Verification System: Instant, transparent credential authenticationKey Innovation:- First in Kazakhstan: Launched the country's pioneering NFT diploma system in 2023- Patent Protected: Secured intellectual property rights (Patent KZ 38001)- Blockchain Security: Immutable educational credentials preventing fraud- Global Accessibility: Digital-first approach enabling worldwide verificationProblem Solved:Traditional paper diplomas are vulnerable to forgery, difficult to verify internationally, and prone to loss or damage. eDiploma addresses these challenges through:- Instant verification capabilities- Permanent, unforgeable digital records- Global accessibility and recognition- Reduced administrative burden for institutionsImpact:- Enhanced trust in educational credentials- Streamlined verification processes for employers- Reduced fraud in academic achievements- Modern, future-ready credential managementTechnical Architecture:- Blockchain-based smart contracts for security- NFT technology for unique digital ownership- User portal for easy access and management- Integration capabilities with educational institutionsMarket Position: As part of Jasaim's product portfolio alongside JasWallet, eDiploma represents a significant step toward digitizing educational infrastructure in Kazakhstan and beyond.Technologies: NFT, Digital Credentials"
+    },
+    {
+      "name": "",
+      "date": null,
+      "description": null
+    },
+    {
+      "name": "",
+      "date": null,
+      "description": null
+    },
+    {
+      "name": "",
+      "date": null,
+      "description": null
+    },
+    {
+      "name": "",
+      "date": null,
+      "description": null
+    },
+    {
+      "name": "CryptoProphet - Advanced Cryptocurrency Prediction Platform",
+      "date": {
+        "start_date": "Sep 2023",
+        "end_date": "Jun 2024"
+      },
+      "description": "Main Author. Developed sophisticated machine learning platform for precise cryptocurrency price predictions, empowering traders and investors with data-driven decision-making tools.Problem Addressed:Lack of thorough market dynamics understanding among crypto investorsNeed for accurate risk assessment and trend analysisMarket volatility requiring advanced predictive modelsTechnical Approach:✅ Advanced Algorithms: Prophet time series forecasting and Linear Regression✅ Classification Models: K-Nearest Neighbors (KNN) for pattern recognition✅ Data Preprocessing: Comprehensive missing data handling and normalization✅ Multi-Dataset Integration: Real-time verified cryptocurrency market dataKey Features:Daily updated datasets with accurate market informationAdvanced handling of data imbalances using SMOTE and ADASYNEnsemble models with hyperparameter optimizationPerformance metrics showcase with actual vs. predicted visualizationsResults:Successful prediction of Ethereum price rise trends25-year forecast: $12,446 USD (ETH)100-year projection: $44,366 USD (ETH)High accuracy in short and long-term predictionsImpact: Reduces financial losses through informed trading decisions while enhancing investor confidence in cryptocurrency markets."
+    },
+    {
+      "name": "AutoAI for text",
+      "date": {
+        "start_date": "May 2023",
+        "end_date": "Sep 2023"
+      },
+      "description": "During my tenure as Lead Developer at IBM Research (May 2023 - September 2023), I spearheaded a comprehensive benchmark evaluation for the AutoAI-for-Text Heterogeneous Model Optimizer project 🚀. AutoAI for text is IBM's cutting-edge framework that democratizes NLP model development by automating the complex process of building advanced text processing pipelines for users across different skill levels 🤖.My primary contributions included:🔧 Evaluation Framework Development: I designed and implemented robust evaluation setups to execute AutoAI-for-Text across multiple configurations and diverse datasets, systematically collecting performance metrics and cost data to assess system effectiveness.📊 Comprehensive Testing & Benchmarking: I conducted extensive testing of AutoAI-for-Text across various datasets and configurations, then expanded the benchmarking infrastructure to evaluate competitive AutoAI systems, providing critical comparative analysis against our platform.⚡ Version Comparison & Optimization: I executed detailed benchmark evaluations comparing different AutoAI-for-Text versions, identifying algorithmic enhancements and specific use cases where particular configurations excelled.🧠 Advanced Model Implementation: I progressed from initial TPOT classifier implementations on simple datasets to sophisticated BERT-based text classification systems, incorporating hyperparameter optimization grids and GPU-accelerated training processes.📈 Results Analysis & Presentation: I synthesized complex performance data, interpreted results, and presented findings to stakeholders, documenting gaps and issues from user perspectives to guide future development."
+    },
+    {
+      "name": "GazeWriter - Eye-Tracking Communication Platform",
+      "date": {
+        "start_date": "Oct 2022",
+        "end_date": "May 2023"
+      },
+      "description": "Developed groundbreaking assistive technology enabling hands-free computer interaction through advanced eye-tracking, empowering individuals with mobility limitations to communicate and work independently.Critical Accessibility Problems Addressed:✅ Mobility Barriers: 15M+ people globally unable to use traditional input devices✅ Communication Limitations: Physical disabilities preventing digital interaction✅ Expensive Solutions: Existing eye-tracking systems cost $10,000-50,000✅ Limited Accessibility: Complex setup requiring specialized hardwareInnovative Eye-Tracking Solutions:✅ Eyelid Movement Detection: Advanced computer vision tracking subtle eye movements✅ Virtual Keyboard Control: Mouse cursor navigation using natural eye motions✅ Click Functionality: Blink-based selection and typing capabilities✅ Audio Conversion: Text-to-speech output for complete communication cycleCore Features:Real-Time Eye Tracking: Millisecond-precision eyelid movement detectionAdaptive Calibration: Personalized setup accommodating individual eye patternsVirtual Keyboard Interface: Intuitive on-screen typing with gaze controlMulti-Modal Output: Text display with integrated audio synthesisAccessibility Optimization: Designed specifically for users with physical limitationsTechnical Innovation:✅ Computer Vision AI: Advanced algorithms processing eye movement patterns✅ Low-Cost Implementation: Standard webcam compatibility vs expensive hardware✅ Real-Time Processing: Instant response to eye movements for fluid interaction✅ Cross-Platform Support: Works across different operating systems and devicesCompetitive Advantages:✅ Cost-Effective: 95% cheaper than existing commercial eye-tracking solutions✅ Easy Setup: No specialized hardware required, works with standard cameras✅ Comprehensive Solution: Complete communication pipeline from input to audio output"
+    },
+    {
+      "name": "JasWallet - Business-Focused Cryptocurrency Platform",
+      "date": {
+        "start_date": "Aug 2022",
+        "end_date": "Feb 2023"
+      },
+      "description": "Created comprehensive cryptocurrency wallet solution specifically designed for business environments, educational institutions, and professional use cases.Company Background:Top 100 Kazakhstan startup 2022 (AstanaHub Digital Bridge)First NFT Diplomas launch in Kazakhstan (2023)AstanaHub resident with NURIS and MBRSL program victoriesCore Features:✅ Multi-Currency Support: Buy & sell cryptocurrency with seamless transactions✅ DApp Browser: Integrated decentralized application access✅ Custom Token Integration: Backend support for loading custom tokens✅ Gamification: User engagement through interactive featuresMarket Analysis:TAM: $6.834 billion (global students/graduates with crypto capacity)SAM: $22.639 million (actively interested crypto users)SOM: $10.641 million (realistically convertible users)Competitive Advantages:✅ Analytical and statistical tools integration✅ NFT data deletion capabilities✅ Comprehensive API access✅ Cross-platform integration features✅ AI implementation for enhanced user experience✅ Kazakhstan market specialization✅ Automated processes and skill development algorithms"
+    },
+    {
+      "name": "",
+      "date": null,
+      "description": null
+    },
+    {
+      "name": "",
+      "date": null,
+      "description": null
+    },
+    {
+      "name": "ALRAHALAH Travel Buddy - Tourism Analytics Platform",
+      "date": {
+        "start_date": "Nov 2022",
+        "end_date": "Dec 2022"
+      },
+      "description": "Main Author. Led development of an innovative wristband-based tourism data collection system supporting Sheikh Mohammed Bin Rashid's 2030 tourism strategy. The solution provides comprehensive tourist behavior analytics through:✅ Smart Wristband Technology: NFC-enabled device with heart monitoring, contactless payments, and renewable energy operation✅ Data Collection Infrastructure: Real-time tracking of tourist movements, spending patterns, and location preferences✅ AI-Powered Insights: Predictive analytics identifying tourism hotspots, seasonal trends, and revenue optimization opportunities✅ Government Integration: Centralized platform for tourism authorities to access unified visitor dataKey Features:Contactless check-ins at hotels, airports, and attractionsDigital documentation storage (passport, visa, insurance)AI-generated personalized tourist experiencesSustainable design with solar panel integrationImpact: Enables government to understand exactly where tourists go, when they visit, and how much they spend - revolutionizing tourism industry decision-making and enhancing visitor experiences across the UAE."
+    },
+    {
+      "name": "",
+      "date": null,
+      "description": null
+    },
+    {
+      "name": "Hydroponics AI system",
+      "date": {
+        "start_date": "Aug 2022",
+        "end_date": "Dec 2022"
+      },
+      "description": null
+    },
+    {
+      "name": "UNITECH",
+      "date": {
+        "start_date": "May 2022",
+        "end_date": "Dec 2022"
+      },
+      "description": null
+    },
+    {
+      "name": "",
+      "date": null,
+      "description": null
+    },
+    {
+      "name": "Neural Network implementation",
+      "date": {
+        "start_date": "Jun 2022",
+        "end_date": "Aug 2022"
+      },
+      "description": null
+    },
+    {
+      "name": "DetectivePuzzleGame",
+      "date": {
+        "start_date": "Feb 2021",
+        "end_date": "Apr 2021"
+      },
+      "description": null
+    },
+    {
+      "name": "",
+      "date": null,
+      "description": null
+    },
+    {
+      "name": "Climate change",
+      "date": {
+        "start_date": "Feb 2021",
+        "end_date": "Mar 2021"
+      },
+      "description": null
+    },
+    {
+      "name": "StudyC",
+      "date": {
+        "start_date": "Jan 2021",
+        "end_date": "Feb 2021"
+      },
+      "description": null
+    },
+    {
+      "name": "",
+      "date": null,
+      "description": null
+    },
+    {
+      "name": "",
+      "date": null,
+      "description": null
+    },
+    {
+      "name": "",
+      "date": null,
+      "description": null
+    },
+    {
+      "name": "IBM Capstone project: Online Shopper Intention Prediction",
+      "date": {
+        "start_date": "Oct 2020",
+        "end_date": "Nov 2020"
+      },
+      "description": null
+    },
+    {
+      "name": "Data-Science-Capstone-Project: Next Word Prediction App",
+      "date": {
+        "start_date": "Sep 2020",
+        "end_date": "Nov 2020"
+      },
+      "description": null
+    },
+    {
+      "name": "Fizmat Olymp",
+      "date": {
+        "start_date": "Nov 2019",
+        "end_date": "May 2020"
+      },
+      "description": "-Made a site for this project."
+    },
+    {
+      "name": "CareOn",
+      "date": {
+        "start_date": "May 2019",
+        "end_date": "Jun 2019"
+      },
+      "description": null
+    },
+    {
+      "name": "",
+      "date": null,
+      "description": null
+    }
+  ],
+  "courses": [],
+  "honors_and_awards": [
+    {
+      "title": "Top 31 Among 241817 in the world in ProjectEuler+ HackerRank",
+      "issuer": "Project Euler & HackerRank",
+      "issued_date": "Aug 2025",
+      "description": null
+    },
+    {
+      "title": "№1 Choice of Country Carso",
+      "issuer": "Choice of Country",
+      "issued_date": "Jul 2025",
+      "description": null
+    },
+    {
+      "title": "Absolute 1st place in all categories in international cup \"Rise of the Titans\" IPC in classic biceps curl",
+      "issuer": "IPC",
+      "issued_date": "Jun 2025",
+      "description": null
+    },
+    {
+      "title": "Absolute 1st place in all categories in international cup \"Rise of the Titans\" of IPC in extreme biceps curl",
+      "issuer": "IPC",
+      "issued_date": "Jun 2025",
+      "description": null
+    },
+    {
+      "title": "Elite in Classic Biceps curl IPC",
+      "issuer": "IPC",
+      "issued_date": "Jun 2025",
+      "description": null
+    },
+    {
+      "title": "Elite in Extreme Biceps curl IPC",
+      "issuer": "IPC",
+      "issued_date": "Jun 2025",
+      "description": null
+    },
+    {
+      "title": "World record in Classic biceps curl IPC",
+      "issuer": "IPC",
+      "issued_date": "Jun 2025",
+      "description": null
+    },
+    {
+      "title": "World record in Extreme biceps curl IPC",
+      "issuer": "IPC",
+      "issued_date": "Jun 2025",
+      "description": null
+    },
+    {
+      "title": "1st place in Asia cup \"Dalanyn quaty\" of NPA in classic biceps curl",
+      "issuer": "NPA",
+      "issued_date": "Apr 2025",
+      "description": null
+    },
+    {
+      "title": "1st place in Asia cup \"Dalanyn quaty\" of NPA in extreme biceps curl",
+      "issuer": "NPA",
+      "issued_date": "Apr 2025",
+      "description": null
+    },
+    {
+      "title": "1st place in Asia cup \"Dalanyn quaty\" of NPA in standing barbell press",
+      "issuer": "NPA",
+      "issued_date": "Apr 2025",
+      "description": null
+    },
+    {
+      "title": "Elite in Classic Biceps curl NPA",
+      "issuer": "NPA",
+      "issued_date": "Apr 2025",
+      "description": null
+    },
+    {
+      "title": "Elite in Extreme Biceps curl NPC",
+      "issuer": "NPA",
+      "issued_date": "Apr 2025",
+      "description": null
+    },
+    {
+      "title": "Master of sports of international class in standing barbell press NPA",
+      "issuer": "NPA",
+      "issued_date": "Apr 2025",
+      "description": null
+    },
+    {
+      "title": "Asia record in standing barbell press NPA",
+      "issuer": "NPA",
+      "issued_date": "Mar 2025",
+      "description": null
+    },
+    {
+      "title": "World record in Extreme biceps curl NPA",
+      "issuer": "NPA",
+      "issued_date": "Mar 2025",
+      "description": null
+    },
+    {
+      "title": "International Youth Math Challenge 2024 - Silver Honour",
+      "issuer": "IYMC",
+      "issued_date": "Feb 2025",
+      "description": null
+    },
+    {
+      "title": "2nd place in International cup IPAF OPEN in Strict biceps curl",
+      "issuer": "IPAF",
+      "issued_date": "Oct 2024",
+      "description": null
+    },
+    {
+      "title": "Elite in Strict Biceps curl",
+      "issuer": "IPAF",
+      "issued_date": "Oct 2024",
+      "description": null
+    },
+    {
+      "title": "International Astronomy and Astrophysics Competition 2024 - National Award 2024",
+      "issuer": "IAAC",
+      "issued_date": "Jul 2024",
+      "description": "The IAAC National Award is a prestigious honor presented to individuals who have demonstrated exceptional knowledge and skills in the field of astronomy and astrophysics. This award is part of the International Astronomy and Astrophysics Competition (IAAC), which is a globally recognized science competition aimed at encouraging students from all countries to showcase their talents and creativity in astronomy and astrophysics."
+    },
+    {
+      "title": "International Astronomy and Astrophysics Competition 2024 - Silver Honour",
+      "issuer": "IAAC",
+      "issued_date": "Jul 2024",
+      "description": null
+    },
+    {
+      "title": "League of Legends in chess.com",
+      "issuer": "Chess.com",
+      "issued_date": "Jul 2024",
+      "description": null
+    },
+    {
+      "title": "Undergraduate Research Scholar",
+      "issuer": "RIT",
+      "issued_date": "May 2024",
+      "description": "The Undergraduate Research Scholar Award is a prestigious recognition bestowed upon undergraduate students who have demonstrated exceptional research capabilities and contributions in their respective fields of study. This award celebrates the dedication, innovation, and scholarly excellence of students who have engaged in significant research projects, showcasing their ability to conduct independent research, analyze data, and contribute valuable insights to their academic disciplines… Show more"
+    },
+    {
+      "title": "Arena International Master",
+      "issuer": "International Chess Federation",
+      "issued_date": "Mar 2024",
+      "description": "Step into the elite league with the Arena International Master title. This prestigious title is awarded to players who achieve and sustain a rating of 1700 or higher. Prove your exceptional chess acumen by holding this rating for: 50 games in Rapid time control 100 games in Blitz time control 150 games in Bullet time control"
+    },
+    {
+      "title": "Project ICE 24 Absolute Champtions (Phase II + Phase I)",
+      "issuer": "United Nations",
+      "issued_date": "Mar 2024",
+      "description": "The ICE24 Competition was a prestigious virtual event that united over 150 universities worldwide to discover innovative solutions in AI for Healthcare. Running from February 23 to March 8, 2024, the competition challenged participants to develop and prototype groundbreaking ideas addressing critical healthcare issues using artificial intelligence. Teams first crafted a robust business model canvas, followed by a video presentation. The top 15 teams advanced to refine their ideas with expert… Show more"
+    },
+    {
+      "title": "Arena Candidate Master",
+      "issuer": "International Chess Federation",
+      "issued_date": "Jan 2024",
+      "description": "Attain the Arena Candidate Master title by demonstrating exceptional skill and consistency. Players must maintain a rating of 1100 or higher, proving their mastery in the competitive arena of online chess. Secure this title by sustaining the rating for: 50 games in Rapid time control 100 games in Blitz time control 150 games in Bullet time control"
+    },
+    {
+      "title": "Arena FIDE Master",
+      "issuer": "International Chess Federation",
+      "issued_date": "Jan 2024",
+      "description": "Elevate your chess career by achieving the Arena FIDE Master title. This honor is reserved for those who reach and uphold a rating of 1400 or higher. Showcase your strategic brilliance by maintaining this rating for: 50 games in Rapid time control 100 games in Blitz time control 150 games in Bullet time control"
+    },
+    {
+      "title": "Payit Hackathon",
+      "issuer": "-",
+      "issued_date": "Jan 2024",
+      "description": "The Payit Hackathon in Dubai 2024 was a prestigious event that challenged participants to redesign an existing app, focusing on identifying and solving user experience issues. Teams conducted thorough analyses of the app's functionality, pinpointing pain points and areas for improvement. The hackathon emphasized creativity and innovation, encouraging participants to propose user-centric redesign solutions informed by extensive research and usability testing. Collaborative problem-solving was… Show more"
+    },
+    {
+      "title": "International Youth Math Challenge 2023 - Silver Honour",
+      "issuer": "IYMC",
+      "issued_date": "Nov 2023",
+      "description": null
+    },
+    {
+      "title": "ZainTECH RIT Data Challenge - 3rd Place",
+      "issuer": "ZainTECH",
+      "issued_date": "Oct 2023",
+      "description": "Participants were required to develop hypotheses based on the data provided. This involved critical thinking and the ability to understand and interpret the data accurately. It was needed to design experiments to test the hypotheses. This challenge focused on the ability to create robust experimental designs that could yield meaningful and actionable results. Participants had to evaluate the performance of their models. This involved understanding various performance metrics and being able to… Show more"
+    },
+    {
+      "title": "Microsoft Learn AI Skills Challenge 4 times winner",
+      "issuer": "Microsoft",
+      "issued_date": "Aug 2023",
+      "description": "1) Machine Learning Challenge 2) Machine Learning Operations (MLOps) Challenge 3) Cognitive Services Challenge 4) AI Builder Challenge"
+    },
+    {
+      "title": "International Astronomy and Astrophysics Competition 2023 - Bronze Honour",
+      "issuer": "IAAC",
+      "issued_date": "Jul 2023",
+      "description": null
+    },
+    {
+      "title": "Dean's List",
+      "issuer": "Rochester Institute of Technology Dubai",
+      "issued_date": "Jun 2023",
+      "description": null
+    },
+    {
+      "title": "Google Farewell Rounds(CodeJam+HashCode+KickStart) 2023: Top 29 among 81000 people",
+      "issuer": "Google",
+      "issued_date": "Apr 2023",
+      "description": null
+    },
+    {
+      "title": "RIT Dubai Ambassador Award",
+      "issuer": "RIT DUBAI",
+      "issued_date": "Apr 2023",
+      "description": null
+    },
+    {
+      "title": "Dean's List",
+      "issuer": "RIT",
+      "issued_date": "Jan 2023",
+      "description": null
+    },
+    {
+      "title": "International Youth Math Challenge 2022 - Silver Honour",
+      "issuer": "IYMC",
+      "issued_date": "Dec 2022",
+      "description": null
+    },
+    {
+      "title": "Dean's List",
+      "issuer": "RIT",
+      "issued_date": "Jul 2022",
+      "description": null
+    },
+    {
+      "title": "International Astronomy and Astrophysics Competition - Gold Honour",
+      "issuer": "IAAC",
+      "issued_date": "Jul 2022",
+      "description": null
+    },
+    {
+      "title": "International Astronomy and Astrophysics Competition - National award",
+      "issuer": "IAAC",
+      "issued_date": "Jul 2022",
+      "description": "https://iaac.space/en/announcement2022"
+    },
+    {
+      "title": "Dean's List",
+      "issuer": "RIT",
+      "issued_date": "Feb 2022",
+      "description": null
+    },
+    {
+      "title": "International Youth Math Challenge 2021 - National Award",
+      "issuer": "IYMC",
+      "issued_date": "Dec 2021",
+      "description": "https://iymc.info/en/announcement2021"
+    },
+    {
+      "title": "International Youth Math Challenge 2021 - Silver Honour",
+      "issuer": "IYMC",
+      "issued_date": "Dec 2021",
+      "description": null
+    },
+    {
+      "title": "Mentor in International Hackathon: \"Ada Lovelace Hackathon France 2021\"",
+      "issuer": "Teens in AI",
+      "issued_date": "Nov 2021",
+      "description": null
+    },
+    {
+      "title": "Mentor in International Hackathon: \"Ada Lovelace Hackathon 2021\"",
+      "issuer": "Teens in AI",
+      "issued_date": "Oct 2021",
+      "description": null
+    },
+    {
+      "title": "Dean's List",
+      "issuer": "RIT",
+      "issued_date": "Jun 2021",
+      "description": null
+    },
+    {
+      "title": "Future Health Hackathon 2071: Bronze Medal",
+      "issuer": "Future Health Hackathon 2071",
+      "issued_date": "May 2021",
+      "description": null
+    },
+    {
+      "title": "Google Hashcode 2021: Top 121 among 9004 teams",
+      "issuer": "Google",
+      "issued_date": "Feb 2021",
+      "description": null
+    },
+    {
+      "title": "2nd place in International Hackathon: \"France Hackathon\"",
+      "issuer": "Teens in AI",
+      "issued_date": "Jan 2021",
+      "description": null
+    },
+    {
+      "title": "Mentor in International Hackathon: \"France Hackathon\"",
+      "issuer": "Teens in AI",
+      "issued_date": "Jan 2021",
+      "description": null
+    },
+    {
+      "title": "Dean's List",
+      "issuer": "RIT",
+      "issued_date": "Dec 2020",
+      "description": null
+    },
+    {
+      "title": "Yandex Cup 2020 Algorithms - 2nd place",
+      "issuer": "Yandex",
+      "issued_date": "Dec 2020",
+      "description": null
+    },
+    {
+      "title": "Candidate of Master of Sport in Muai Thai",
+      "issuer": "Sports Committee of Republic of Kazakhstan",
+      "issued_date": "May 2020",
+      "description": null
+    },
+    {
+      "title": "International Hackathon “Digital Commonwealth” - Winner in nominee \"Best code solution\"",
+      "issuer": "MIPT",
+      "issued_date": "Dec 2019",
+      "description": null
+    },
+    {
+      "title": "International Youth Math Challenge 2019 - Bronze Honour",
+      "issuer": "IYMC",
+      "issued_date": "Dec 2019",
+      "description": null
+    },
+    {
+      "title": "Phystech International Math - 3rd place",
+      "issuer": "-",
+      "issued_date": "Nov 2019",
+      "description": null
+    },
+    {
+      "title": "Phystech International Physics - 3rd place",
+      "issuer": "-",
+      "issued_date": "Nov 2019",
+      "description": null
+    },
+    {
+      "title": "Regional Physics Olympiad - 3rd place",
+      "issuer": "-",
+      "issued_date": "Sep 2019",
+      "description": null
+    },
+    {
+      "title": "Master of Sport in Boxing",
+      "issuer": "Sport Committee of Republic of Kazakhstan",
+      "issued_date": "Aug 2019",
+      "description": null
+    },
+    {
+      "title": "An open forum of projects with international participation - 3rd place",
+      "issuer": "-",
+      "issued_date": "May 2019",
+      "description": null
+    },
+    {
+      "title": "XL International Lomonosov Olympiads, Astrophysics and Biology - 1 place",
+      "issuer": "-",
+      "issued_date": "Apr 2019",
+      "description": null
+    },
+    {
+      "title": "Regional Biology Olympiad - 2nd place",
+      "issuer": "-",
+      "issued_date": "Feb 2019",
+      "description": null
+    },
+    {
+      "title": "XI International Chemistry Olympiad - Absolute 1 place",
+      "issuer": "-",
+      "issued_date": "Nov 2018",
+      "description": null
+    },
+    {
+      "title": "Championship of Asia Boxing - 1st place",
+      "issuer": "-",
+      "issued_date": "Oct 2018",
+      "description": null
+    },
+    {
+      "title": "Championship of Asia Hand-to-Hand fighting - 1st place",
+      "issuer": "-",
+      "issued_date": "Jul 2018",
+      "description": null
+    },
+    {
+      "title": "21st Century, Biology and Biotechnology - honorable mention",
+      "issuer": "-",
+      "issued_date": "Apr 2018",
+      "description": null
+    },
+    {
+      "title": "XL International Lomonosov Olympiads, Astrophysics - 1 place",
+      "issuer": "-",
+      "issued_date": "Apr 2018",
+      "description": null
+    },
+    {
+      "title": "VIII Nauryz meetings - Winner in nomination \"The best modern solution\"",
+      "issuer": "-",
+      "issued_date": "Mar 2018",
+      "description": null
+    },
+    {
+      "title": "International 5th Experimental Physics Olympiad \"The day of Electron\" - 3rd place",
+      "issuer": "-",
+      "issued_date": "Dec 2017",
+      "description": null
+    },
+    {
+      "title": "International XVII Kolmogorov project reading - Winner in nominee \"Best performance\"",
+      "issuer": "-",
+      "issued_date": "May 2017",
+      "description": null
+    },
+    {
+      "title": "Candidate of Master of Sport in Jiu-Jitsu",
+      "issuer": "Sports Committee or Republic of Kazakhstan",
+      "issued_date": "Jun 2016",
+      "description": null
+    },
+    {
+      "title": "Championship of Kazakhstan Hand-to-Hand Fighting - 1st place",
+      "issuer": "-",
+      "issued_date": "Apr 2016",
+      "description": null
+    },
+    {
+      "title": "Championship of Kazakhstan Jiu-Jitsu - 3rd place",
+      "issuer": "-",
+      "issued_date": "Apr 2016",
+      "description": null
+    },
+    {
+      "title": "Championship of Kazakhstan Jiu-Jitsu - 1st place",
+      "issuer": "-",
+      "issued_date": "Oct 2015",
+      "description": null
+    }
+  ],
+  "activities": [
+    {
+      "title": "Sometimes one week feels like a whole lifetime. Friday: morning swim in the icy Big Almaty River, nFactorial Demo Day, and a trip to the ER with a…",
+      "subtitle": "Liked by Alisher Beisembekov",
+      "image_url": "https://media.licdn.com/dms/image/v2/D4D22AQEiSlOpFP8x9A/feedshare-shrink_800/B4DZi2pQB0HsAk-/0/1755410924139?e=2147483647&v=beta&t=zZxfUiNjZLCYo7qI00Tk6ExsqakGCnL__kwLonSWjss",
+      "link": "https://www.linkedin.com/posts/alexander-arkadiyuly-5174362b7_sometimes-one-week-feels-like-a-whole-lifetime-activity-7362727067894870016-k-ic"
+    },
+    {
+      "title": "ROR over ROI.",
+      "subtitle": "Liked by Alisher Beisembekov",
+      "image_url": "https://media.licdn.com/dms/image/v2/D4D22AQFWxxO53s_U_g/feedshare-shrink_800/B4DZiI_ywZHsAk-/0/1754645082182?e=2147483647&v=beta&t=pSl8Mcf80dFONfaWMzzGy9Eb3_BbGKCZyPm7aeFlxgE",
+      "link": "https://www.linkedin.com/posts/nartmadi_ror-over-roi-activity-7359514891134676992-xkuU"
+    },
+    {
+      "title": "🚀Just launched PerfectFit — an AI-powered population analysis tool 🚀 https://perfectfitt.org/ It allows users to define any set of filters —…",
+      "subtitle": "Liked by Alisher Beisembekov",
+      "image_url": "https://media.licdn.com/dms/image/v2/D4E22AQH-YneDvL_sow/feedshare-shrink_1280/B4EZh6KzjOGUAo-/0/1754396310612?e=2147483647&v=beta&t=vLod5pFvftdSyjDQ3Fv4f7xKI2j6vCyyOG3asxang8Q",
+      "link": "https://www.linkedin.com/posts/mirsaid-abbasov-2234851bb_ai-populationinsights-perfectfit-activity-7358471467044376578-1W8b"
+    },
+    {
+      "title": "Beijing, China. Recently several new friends from research institutes and high-tech companies discussed about latest options of top FP64-performances…",
+      "subtitle": "Liked by Alisher Beisembekov",
+      "image_url": "https://media.licdn.com/dms/image/v2/D5622AQGOZ-ExxHvqiQ/feedshare-shrink_800/B56ZfzF4hUGoAg-/0/1752130103734?e=2147483647&v=beta&t=WUVv824UY4vGLBUdvIrgxtdgdqMEn_L5yw9ErKd0cOM",
+      "link": "https://www.linkedin.com/posts/morris-hagen-ici_beijing-china-recently-several-new-friends-activity-7348966308199219201-u0w0"
+    },
+    {
+      "title": "Beijing, China. ICI received 2 more patents received from China National Intellectual Property Administration (CNIPA). ICI - Network Expertise Helps…",
+      "subtitle": "Liked by Alisher Beisembekov",
+      "image_url": "https://media.licdn.com/dms/image/v2/D5622AQHX08NJJkgNDw/feedshare-shrink_2048_1536/B56ZgbNY1zHMAo-/0/1752803153203?e=2147483647&v=beta&t=cS73sGCUlOfIMS332-hsQMiZJPnCTTXhBJP9nAVLSjI",
+      "link": "https://www.linkedin.com/posts/morris-hagen-ici_beijing-china-ici-received-2-more-patents-activity-7351789287127830528-GGZE"
+    },
+    {
+      "title": "Goal achieved: World's strongest man. Yes, you read it right, I've became one of the strongest in this universe. To be exact, in arms section. Yes…",
+      "subtitle": "Liked by Alisher Beisembekov",
+      "image_url": "https://media.licdn.com/dms/image/v2/D5622AQH3_PSJPt1Fmg/feedshare-shrink_1280/B56Zdkk01GGoAk-/0/1749739067826?e=2147483647&v=beta&t=LkAE-ZMyVe9MLohfJ2tcVw_U4ag9gKFNcXMhLg-z2LY",
+      "link": "https://www.linkedin.com/posts/alisher-beisembekov_goal-achieved-worlds-strongest-man-yes-activity-7338937581465702400-BE5g"
+    },
+    {
+      "title": "Officially a graduate! I am beyond proud of this milestone, im very grateful for the memories, the challeneges, and everyone who was part of this…",
+      "subtitle": "Liked by Alisher Beisembekov",
+      "image_url": "https://media.licdn.com/dms/image/v2/D4E22AQHQ4f6sl8-Ypg/feedshare-shrink_800/B4EZe4LRpTHIAg-/0/1751141668498?e=2147483647&v=beta&t=1FypXDWQVa5oBP8B6ARceKK6Q51lsmzEUUpQDA5QaKg",
+      "link": "https://www.linkedin.com/posts/khalid-ahli_rit-graduate-activity-7344820512964968449-TCZ3"
+    },
+    {
+      "title": "When you return to the place that shaped your earliest dreams, even its air feels nutritious. The forests seem to whisper stories you almost forgot.…",
+      "subtitle": "Liked by Alisher Beisembekov",
+      "image_url": "https://media.licdn.com/dms/image/v2/D4E22AQFs9Td0BX5RGw/feedshare-shrink_2048_1536/B4EZet6ifJGwAw-/0/1750969510925?e=2147483647&v=beta&t=Z3zMKJvwKoqIMDi03fhCs7AYv0doq_57CbkWMs_LhPY",
+      "link": "https://www.linkedin.com/posts/bekakhmetov_burabay-education-kazakhstan-activity-7344098432447377409-hV27"
+    },
+    {
+      "title": "Why a bunker is not an option We live in a time when the idea of building metaphorical and even literal bunkers is becoming more tempting. The…",
+      "subtitle": "Liked by Alisher Beisembekov",
+      "image_url": "https://media.licdn.com/dms/image/v2/D4E22AQGDakYk7GK8SA/feedshare-shrink_2048_1536/B4EZeTgctrHgAo-/0/1750526450442?e=2147483647&v=beta&t=ZZStuU-kwxykTtOcMY5Ce4_qSRt9A3BDqzTBy955yE0",
+      "link": "https://www.linkedin.com/posts/bekakhmetov_education-nomadica-kazakhstan-activity-7342240098064711681-696x"
+    },
+    {
+      "title": "Proud to share that I’ve officially graduated with a Bachelor of Science in Computing and Information Technology from Rochester Institute of…",
+      "subtitle": "Liked by Alisher Beisembekov",
+      "image_url": "https://media.licdn.com/dms/image/v2/D4D22AQGrHgVPMBqf5w/feedshare-shrink_800/B4DZe4DuETH4Ag-/0/1751139685895?e=2147483647&v=beta&t=CF5mbzRllfxBN3oNGql68_0v1TCqNERAqBQ4h0ZfBTw",
+      "link": "https://www.linkedin.com/posts/najibalmadi_ritgraduate-classof2025-informationtechnology-activity-7344812212668018688-K2Ad"
+    },
+    {
+      "title": "Senro at Forbes Middle East Building the Future Summit. Founder & CEO Nart Madi connected with top executives, including the CEO & Editor-in-Chief…",
+      "subtitle": "Liked by Alisher Beisembekov",
+      "image_url": "https://static.licdn.com/aero-v1/sc/h/53n89ecoxpr1qrki1do3alazb",
+      "link": "https://www.linkedin.com/posts/senro_forbes-forbesmiddleeast-activity-7333162889387606016-HrZR"
+    },
+    {
+      "title": "I am proud to announce my graduation from Rochester Institute of Technology – Dubai with a Bachelor of Science in Computer Information Technology. I…",
+      "subtitle": "Liked by Alisher Beisembekov",
+      "image_url": "https://media.licdn.com/dms/image/v2/D4D22AQG-QSaqV3eJWA/feedshare-shrink_800/B4DZe4AKyXGsAs-/0/1751138754836?e=2147483647&v=beta&t=IU4kB9CHacuMrq_iOyfznXCq0aQOg6Dyokvc_-qP4Wc",
+      "link": "https://www.linkedin.com/posts/albair-elias_rit-cit-graduate-activity-7344808290989543424-Nj0v"
+    },
+    {
+      "title": "Hello everyone, It is a late post but still would like to inform the LinkedIn community I have officially graduated from the University of…",
+      "subtitle": "Liked by Alisher Beisembekov",
+      "image_url": "https://media.licdn.com/dms/image/v2/D4E22AQHYygcxSl0lrw/feedshare-shrink_1280/B4EZe0S27SHwAo-/0/1751076532760?e=2147483647&v=beta&t=rOHX72EeN_wPqe2pu_uGHB7M6srqv1dDEDdhUc3l8sA",
+      "link": "https://www.linkedin.com/posts/yersaiyn11_hello-everyone-it-is-a-late-post-but-still-activity-7344547315329773568-gEPG"
+    },
+    {
+      "title": "Moscow, Russia. I had a talk with Mr. Maxime Bykoff from ENGITEX company about their latest Java Multiprocessing (JMP) software. JMP is an…",
+      "subtitle": "Liked by Alisher Beisembekov",
+      "image_url": "https://media.licdn.com/dms/image/v2/D5622AQFFkR9tfqud-w/feedshare-shrink_2048_1536/B56ZeamucOG0Ao-/0/1750645539420?e=2147483647&v=beta&t=XCdbzdskcfMQroRoHrlygWH4TxbeUWBx8jWD4so_AeQ",
+      "link": "https://www.linkedin.com/posts/morris-hagen-ici_moscow-russia-i-had-a-talk-with-mr-maxime-activity-7342739596847300608-89UE"
+    },
+    {
+      "title": "1 more Telecom project delivered. Tejas OTN and Huawei NE40E service router. Thanks, Sao Beira! ICI - Network Expertise Helps You Succeed",
+      "subtitle": "Liked by Alisher Beisembekov",
+      "image_url": "https://media.licdn.com/dms/image/v2/D4D22AQFOTHHKTekscA/feedshare-shrink_1280/B4DZeLleIlGYAk-/0/1750393550190?e=2147483647&v=beta&t=FIGxfw_174B8vQkTSPs83lTdf2mL_dXi5PigcOhdhtA",
+      "link": "https://www.linkedin.com/posts/morris-hagen-ici_1-more-telecom-project-delivered-tejas-otn-activity-7341682713248108544-PZL3"
+    },
+    {
+      "title": "Humbled to announce that I've officially graduated from Nazarbayev University! 🎓 This journey has been nothing short of transformative. Countless…",
+      "subtitle": "Liked by Alisher Beisembekov",
+      "image_url": "https://media.licdn.com/dms/image/v2/D4E22AQGIgrwjveYmgA/feedshare-shrink_800/B4EZdy7l0gHcAg-/0/1749979914350?e=2147483647&v=beta&t=WahVJ0z98JUKrNuvZtykXXfc9F5zXYYLW6JgLhYDiQA",
+      "link": "https://www.linkedin.com/posts/nu-granuation-newbeginnings-activity-7339947762098008065-FohG"
+    }
+  ],
+  "similar_profiles": [
+    {
+      "url": "https://uk.linkedin.com/in/justadlet",
+      "name": "Adlet Z.",
+      "title": "Software Engineer @ Meta",
+      "image_url": null
+    },
+    {
+      "url": "https://uk.linkedin.com/in/bakhyt-bakiyev",
+      "name": "Bakhyt Bakiyev",
+      "title": "PhD student specializing in Natural Language Processing.",
+      "image_url": null
+    },
+    {
+      "url": "https://kz.linkedin.com/in/bekzat-kalybayev-3655711b3",
+      "name": "Bekzat Kalybayev",
+      "title": "Software designing | iOS Development | Mobile Applications",
+      "image_url": null
+    },
+    {
+      "url": "https://kz.linkedin.com/in/vitaliy-konstantinov",
+      "name": "Vitaliy Konstantinov",
+      "title": "Lead Back End Engineer",
+      "image_url": null
+    },
+    {
+      "url": "https://uk.linkedin.com/in/yerkimbekov",
+      "name": "Alisher Y.",
+      "title": "Software Engineer @Bloomberg",
+      "image_url": null
+    },
+    {
+      "url": "https://kz.linkedin.com/in/alexeymuryshkin",
+      "name": "Alexey Muryshkin",
+      "title": "Senior Software & Data Engineer at GOAT.AI",
+      "image_url": null
+    },
+    {
+      "url": "https://kz.linkedin.com/in/farrukhyakubov",
+      "name": "Farrukh Yakubov",
+      "title": null,
+      "image_url": null
+    },
+    {
+      "url": "https://kz.linkedin.com/in/zhandos-bolatbekov",
+      "name": "Zhandos Bolatbekov",
+      "title": "Software Engineer | iOS",
+      "image_url": null
+    },
+    {
+      "url": "https://kz.linkedin.com/in/serik-turusbekov-4b9b6011",
+      "name": "Serik Turusbekov",
+      "title": "IT at KPMG Audit",
+      "image_url": null
+    },
+    {
+      "url": "https://kz.linkedin.com/in/nassirova",
+      "name": "Elvira Nassirova",
+      "title": "Analytics Engineer and Data Team Lead at Railsware",
+      "image_url": null
+    },
+    {
+      "url": "https://kz.linkedin.com/in/kuanysh-konysbek-1b221b179",
+      "name": "Kuanysh Konysbek",
+      "title": "Data engineer",
+      "image_url": null
+    },
+    {
+      "url": "https://kz.linkedin.com/in/ukibassov",
+      "name": "Baubek Ukibassov",
+      "title": null,
+      "image_url": null
+    },
+    {
+      "url": "https://kr.linkedin.com/in/islam-kenges-a1a5771a8",
+      "name": "Islam Kenges",
+      "title": "PNU student",
+      "image_url": null
+    },
+    {
+      "url": "https://ru.linkedin.com/in/andrey-vetrov-481174a1",
+      "name": "Andrey Vetrov",
+      "title": "Cloud and Kubernetes Expert",
+      "image_url": null
+    },
+    {
+      "url": "https://kz.linkedin.com/in/%D0%BD%D1%83%D1%80%D0%B6%D0%B0%D0%BD-%D0%B1%D0%B5%D1%80%D0%BD%D0%B8%D1%8F%D0%B7%D0%BE%D0%B2-65212634",
+      "name": "Нуржан Берниязов",
+      "title": "Евангелист IT технологий – Sunrise Development",
+      "image_url": null
+    },
+    {
+      "url": "https://id.linkedin.com/in/yarogolyev",
+      "name": "Yaro Golyev",
+      "title": "Web Designer",
+      "image_url": null
+    },
+    {
+      "url": "https://kz.linkedin.com/in/saulet-yskak",
+      "name": "Saulet Yskak",
+      "title": "Frontend Developer at Klika Tech",
+      "image_url": null
+    },
+    {
+      "url": "https://kz.linkedin.com/in/vlad-shtark",
+      "name": "Владислав Штарк",
+      "title": "Backend Team Lead",
+      "image_url": null
+    },
+    {
+      "url": "https://kz.linkedin.com/in/diasadil",
+      "name": "Dias Adil",
+      "title": null,
+      "image_url": null
+    },
+    {
+      "url": "https://kz.linkedin.com/in/medeu-zhussiyev",
+      "name": "Medeu Zhussiyev",
+      "title": null,
+      "image_url": null
+    }
+  ],
+  "patents": [
+    {
+      "title": "DriveVision",
+      "patent_id": "KZ 60968",
+      "link": null
+    },
+    {
+      "title": "Hyperports - Blockchain Port Operations Platform",
+      "patent_id": "KZ 59912",
+      "link": null
+    },
+    {
+      "title": "AutoTrade - Comprehensive Automotive Dealership Management Revolution",
+      "patent_id": "KZ 59905",
+      "link": null
+    },
+    {
+      "title": "XG SONIC - Universal Network Speed Optimization Revolution",
+      "patent_id": "KZ 59121",
+      "link": null
+    },
+    {
+      "title": "Carso - AI-Powered Auto Parts Trading Platform",
+      "patent_id": "KZ 58713",
+      "link": null
+    },
+    {
+      "title": "Shyndyq: Plagiarism detector based on AI and Neural Network",
+      "patent_id": "KZ 47184",
+      "link": null
+    },
+    {
+      "title": "ShareTalk",
+      "patent_id": "KZ 41750",
+      "link": null
+    },
+    {
+      "title": "GazeWriter",
+      "patent_id": "KZ 38046",
+      "link": null
+    },
+    {
+      "title": "HealthHub/MedGPT/Medica",
+      "patent_id": "KZ 38024",
+      "link": null
+    },
+    {
+      "title": "eDiploma system (Generator + Smart-Contract + Portal)",
+      "patent_id": "KZ 38001",
+      "link": null
+    },
+    {
+      "title": "eDiploma Generator",
+      "patent_id": "KZ 37650",
+      "link": null
+    }
+  ]
 }

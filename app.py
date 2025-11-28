@@ -16,6 +16,7 @@ st.set_page_config(
 if 'current_page' not in st.session_state:
     st.session_state.current_page = 'home'
 
+
 # Advanced Post-Modern CSS Design
 def load_css():
     st.markdown("""
@@ -350,6 +351,7 @@ def load_css():
     <div class="animated-bg"></div>
     """, unsafe_allow_html=True)
 
+
 # Load CSS
 load_css()
 
@@ -471,7 +473,7 @@ if st.session_state.current_page == 'home':
                 company_html = f'<a href="{position["website"]}" target="_blank" class="company-link text-gradient" style="font-weight: 600;">{position["company"]}</a>'
             else:
                 company_html = f'<span class="text-gradient" style="font-weight: 600;">{position["company"]}</span>'
-                
+
             st.markdown(f"""
             <div class="achievement-card">
                 <h4 class="text-white">{position["title"]}</h4>
@@ -526,7 +528,8 @@ elif st.session_state.current_page == 'career':
             "company": "Carso.kz",
             "period": "May 2025 - Present",
             "description": "Leading automotive technology revolution in Kazakhstan",
-            "achievements": ["Proprietary mobile/web applications", "Strategic partnerships", "Market leadership positioning"]
+            "achievements": ["Proprietary mobile/web applications", "Strategic partnerships",
+                             "Market leadership positioning"]
         },
         {
             "title": "Chief Information Officer",
@@ -575,7 +578,7 @@ elif st.session_state.current_page == 'career':
             company_html = f'<a href="{position["website"]}" target="_blank" class="company-link text-gradient" style="font-weight: 600; font-size: 1.1rem;">{position["company"]}</a>'
         else:
             company_html = f'<span class="text-gradient" style="font-weight: 600; font-size: 1.1rem;">{position["company"]}</span>'
-            
+
         st.markdown(f'''
         <div class="achievement-card">
             <div style="display: flex; align-items: start; gap: 20px;">
@@ -732,10 +735,13 @@ elif st.session_state.current_page == 'research':
 
     patents = [
         {"title": "DriveVision", "id": "KZ 60968", "year": "2025", "category": "Computer Vision"},
-        {"title": "Hyperports - Blockchain Port Operations", "id": "KZ 59912", "year": "2025", "category": "Blockchain"},
-        {"title": "AutoTrade - Automotive Dealership Management", "id": "KZ 59905", "year": "2025", "category": "AI/Business"},
+        {"title": "Hyperports - Blockchain Port Operations", "id": "KZ 59912", "year": "2025",
+         "category": "Blockchain"},
+        {"title": "AutoTrade - Automotive Dealership Management", "id": "KZ 59905", "year": "2025",
+         "category": "AI/Business"},
         {"title": "XG SONIC - Network Speed Optimization", "id": "KZ 59121", "year": "2025", "category": "5G/6G"},
-        {"title": "Carso - Auto Parts Trading Platform", "id": "KZ 58713", "year": "2025", "category": "AI/Marketplace"},
+        {"title": "Carso - Auto Parts Trading Platform", "id": "KZ 58713", "year": "2025",
+         "category": "AI/Marketplace"},
         {"title": "Shyndyq - AI Plagiarism Detector", "id": "KZ 47184", "year": "2024", "category": "AI/Education"}
     ]
 
@@ -1195,4 +1201,3 @@ st.markdown("""
     </div>
 </div>
 """, unsafe_allow_html=True)
-
