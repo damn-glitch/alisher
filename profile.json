@@ -269,87 +269,511 @@
     }
   ],
   "certifications": [
-    {
-      "image_url": "",
-      "title": "Machine Learning",
-      "course_link": "https://www.coursera.org/account/accomplishments/certificate/6N7NQJ2MG6FF?trk=public_profile_see-credential",
-      "issuer": "Stanford University",
-      "issued_date": "Oct 2020 Credential ID 6N7NQJ2MG6FF",
-      "credential": "6N7NQJ2MG6FF"
-    },
-    {
-      "image_url": "",
-      "title": "Cloud Architecture with Google Cloud Specialization",
-      "course_link": "https://www.coursera.org/account/accomplishments/specialization/certificate/JHL9JF3WQ7QY?trk=public_profile_see-credential",
-      "issuer": "Google Cloud (NJ)",
-      "issued_date": "Oct 2020 Credential ID JHL9JF3WQ7QY",
-      "credential": "JHL9JF3WQ7QY"
-    },
-    {
-      "image_url": "",
-      "title": "Cloud Engineering with Google Cloud Specialization",
-      "course_link": "https://www.coursera.org/account/accomplishments/specialization/certificate/LM6LTD99ST3L?trk=public_profile_see-credential",
-      "issuer": "Google Cloud (NJ)",
-      "issued_date": "Oct 2020 Credential ID LM6LTD99ST3L",
-      "credential": "LM6LTD99ST3L"
-    },
-    {
-      "image_url": "",
-      "title": "Data Engineering with Google Cloud Specialization",
-      "course_link": "https://www.coursera.org/account/accomplishments/specialization/certificate/7K8WUNYLW5TT?trk=public_profile_see-credential",
-      "issuer": "Google Cloud (NJ)",
-      "issued_date": "Oct 2020 Credential ID 7K8WUNYLW5TT",
-      "credential": "7K8WUNYLW5TT"
-    },
-    {
-      "image_url": "",
-      "title": "Astro 101: Black Holes",
-      "course_link": "https://www.coursera.org/account/accomplishments/certificate/PSRUEBLG8BU8?trk=public_profile_see-credential",
-      "issuer": "University of Alberta",
-      "issued_date": "Sep 2020 Credential ID PSRUEBLG8BU8",
-      "credential": "PSRUEBLG8BU8"
-    },
-    {
-      "image_url": "",
-      "title": "Google IT Automation with Python Specialization",
-      "course_link": "https://www.coursera.org/account/accomplishments/specialization/certificate/439U2DRG7CBJ?trk=public_profile_see-credential",
-      "issuer": "Google",
-      "issued_date": "Sep 2020 Credential ID 439U2DRG7CBJ",
-      "credential": "439U2DRG7CBJ"
-    },
-    {
-      "image_url": "",
-      "title": "IT Fundamentals for Cybersecurity Specialization",
-      "course_link": "https://www.coursera.org/account/accomplishments/specialization/certificate/W3SLS7WNDW68?trk=public_profile_see-credential",
-      "issuer": "IBM",
-      "issued_date": "Sep 2020 Credential ID W3SLS7WNDW68",
-      "credential": "W3SLS7WNDW68"
-    },
-    {
-      "image_url": "",
-      "title": "Security Analyst Fundamentals Specialization",
-      "course_link": "https://www.coursera.org/account/accomplishments/specialization/certificate/X4P3NHJMT9BF?trk=public_profile_see-credential",
-      "issuer": "IBM",
-      "issued_date": "Sep 2020 Credential ID X4P3NHJMT9BF",
-      "credential": "X4P3NHJMT9BF"
-    },
-    {
-      "image_url": "",
-      "title": "Coding for Everyone: C and C++ Specialization",
-      "course_link": "https://www.coursera.org/account/accomplishments/specialization/certificate/Y65ZD2M7KMVB?trk=public_profile_see-credential",
-      "issuer": "University of California, Santa Cruz",
-      "issued_date": "Sep 2020 Credential ID Y65ZD2M7KMVB",
-      "credential": "Y65ZD2M7KMVB"
-    },
-    {
-      "image_url": "",
-      "title": "Google IT Support Specialization",
-      "course_link": "https://www.coursera.org/account/accomplishments/specialization/certificate/EQLV3SWATCAL?trk=public_profile_see-credential",
-      "issuer": "Google",
-      "issued_date": "Sep 2020 Credential ID EQLV3SWATCAL",
-      "credential": "EQLV3SWATCAL"
-    }
-  ],
+  {
+    "image_url": "",
+    "title": "FrontEnd Developer (React)",
+    "course_link": "",
+    "issuer": "HackerRank",
+    "issued_date": "Apr 2024",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "Node (Basic) Certificate",
+    "course_link": "",
+    "issuer": "HackerRank",
+    "issued_date": "Apr 2024",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "Software Engineer",
+    "course_link": "",
+    "issuer": "HackerRank",
+    "issued_date": "Apr 2024",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "Software Engineer Intern",
+    "course_link": "",
+    "issuer": "HackerRank",
+    "issued_date": "Apr 2024",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "Arena Candidate Master",
+    "course_link": "",
+    "issuer": "International Chess Federation",
+    "issued_date": "Jan 2024",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "Arena FIDE Master",
+    "course_link": "",
+    "issuer": "International Chess Federation",
+    "issued_date": "Jan 2024",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "ZainTECH RIT Data Challenge - 3rd Place",
+    "course_link": "",
+    "issuer": "ZainTECH",
+    "issued_date": "Oct 2023 Credential ID 7f0d70f5-5d03-4b00-a580-64c066f23db2",
+    "credential": "7f0d70f5-5d03-4b00-a580-64c066f23db2"
+  },
+  {
+    "image_url": "",
+    "title": "AI Builder",
+    "course_link": "",
+    "issuer": "Microsoft",
+    "issued_date": "Aug 2023",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "AI Marathon",
+    "course_link": "",
+    "issuer": "Awara IT",
+    "issued_date": "Aug 2023",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "Angular (Intermediate) Certificate",
+    "course_link": "",
+    "issuer": "HackerRank",
+    "issued_date": "Aug 2023",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "Cognitive Services",
+    "course_link": "",
+    "issuer": "Microsoft",
+    "issued_date": "Aug 2023",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "Go (Intermediate) Certificate",
+    "course_link": "",
+    "issuer": "HackerRank",
+    "issued_date": "Aug 2023",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "Machine Learning",
+    "course_link": "",
+    "issuer": "Microsoft",
+    "issued_date": "Aug 2023",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "Machine Learning Operations (MLOps)",
+    "course_link": "",
+    "issuer": "Microsoft",
+    "issued_date": "Aug 2023",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "R (Intermediate) Certificate",
+    "course_link": "",
+    "issuer": "HackerRank",
+    "issued_date": "Aug 2023",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "Certificate of Appreciation - Guest Speaker at AI Experience RIT 365 Digital AI Citizenship",
+    "course_link": "",
+    "issuer": "Rochester Institute of Technology, Dubai (RIT Dubai)",
+    "issued_date": "Nov 2022",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "Angular (Basic) Certificate",
+    "course_link": "",
+    "issuer": "HackerRank",
+    "issued_date": "Oct 2022",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "Go (Basic) Certificate",
+    "course_link": "",
+    "issuer": "HackerRank",
+    "issued_date": "Oct 2022",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "React (Basic) Certificate",
+    "course_link": "",
+    "issuer": "HackerRank",
+    "issued_date": "Oct 2022",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "SQL (Advanced) Certificate",
+    "course_link": "",
+    "issuer": "HackerRank",
+    "issued_date": "Oct 2022",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "JavaScript (Basic) Certificate",
+    "course_link": "",
+    "issuer": "HackerRank",
+    "issued_date": "Mar 2022",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "JavaScript (Intermediate) Certificate",
+    "course_link": "",
+    "issuer": "HackerRank",
+    "issued_date": "Mar 2022",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "SQL (Basic) Certificate",
+    "course_link": "",
+    "issuer": "HackerRank",
+    "issued_date": "Mar 2022",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "SQL (Intermediate) Certificate",
+    "course_link": "",
+    "issuer": "HackerRank",
+    "issued_date": "Mar 2022",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "C# (Basic) Certificate",
+    "course_link": "",
+    "issuer": "HackerRank",
+    "issued_date": "Jul 2021",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "Python (Basic) Certificate",
+    "course_link": "",
+    "issuer": "HackerRank",
+    "issued_date": "May 2021",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "Quantum Computing Course",
+    "course_link": "",
+    "issuer": "The Coding School",
+    "issued_date": "May 2021",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "Java (Basic) Certificate",
+    "course_link": "",
+    "issuer": "HackerRank",
+    "issued_date": "Apr 2021",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "Problem Solving (Basic) Certificate",
+    "course_link": "",
+    "issuer": "HackerRank",
+    "issued_date": "Apr 2021",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "Problem Solving (Intermediate) Certificate",
+    "course_link": "",
+    "issuer": "HackerRank",
+    "issued_date": "Apr 2021",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "REST API (Intermediate) Certificate",
+    "course_link": "",
+    "issuer": "HackerRank",
+    "issued_date": "Apr 2021",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "Getting Started With Google Analytics 360",
+    "course_link": "",
+    "issuer": "Google Analytics for Business",
+    "issued_date": "Jan 2021 · Expires Jan 2024",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "Google Analytics for Beginners",
+    "course_link": "",
+    "issuer": "Google Analytics for Business",
+    "issued_date": "Jan 2021 · Expires Jan 2024",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "Google Analytics for Power Users",
+    "course_link": "",
+    "issuer": "Google Analytics for Business",
+    "issued_date": "Jan 2021 · Expires Jan 2024",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "Google Tag Manager Fundamentals",
+    "course_link": "",
+    "issuer": "Google Analytics for Business",
+    "issued_date": "Jan 2021 · Expires Jan 2024",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "Introduction to Data Studio",
+    "course_link": "",
+    "issuer": "Google Analytics for Business",
+    "issued_date": "Jan 2021 · Expires Jan 2024",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "Architecting with Google Compute Engine Specialization",
+    "course_link": "https://www.coursera.org/account/accomplishments/specialization/certificate/ZEDAVFZ6ZC4H",
+    "issuer": "Google",
+    "issued_date": "Dec 2020 Credential ID ZEDAVFZ6ZC4H",
+    "credential": "ZEDAVFZ6ZC4H"
+  },
+  {
+    "image_url": "",
+    "title": "Google Ads Search Certification",
+    "course_link": "",
+    "issuer": "Google",
+    "issued_date": "Dec 2020 · Expires Dec 2021",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "Install and Manage Google Cloud's Apigee API Platform Specialization",
+    "course_link": "https://www.coursera.org/account/accomplishments/specialization/certificate/7D5R6G8KMJQT",
+    "issuer": "Google",
+    "issued_date": "Nov 2020 Credential ID 7D5R6G8KMJQT",
+    "credential": "7D5R6G8KMJQT"
+  },
+  {
+    "image_url": "",
+    "title": "Advanced Data Science with IBM Specialization",
+    "course_link": "https://www.coursera.org/account/accomplishments/specialization/certificate/SA4Y3LTDYGU9",
+    "issuer": "IBM",
+    "issued_date": "Nov 2020 Credential ID SA4Y3LTDYGU9",
+    "credential": "SA4Y3LTDYGU9"
+  },
+  {
+    "image_url": "",
+    "title": "Applied Data Science with Python - Level 2",
+    "course_link": "",
+    "issuer": "IBM",
+    "issued_date": "Nov 2020",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "Data Science Specialization",
+    "course_link": "https://www.coursera.org/account/accomplishments/specialization/certificate/EAXJEUFWS786",
+    "issuer": "The Johns Hopkins University",
+    "issued_date": "Nov 2020 Credential ID EAXJEUFWS786",
+    "credential": "EAXJEUFWS786"
+  },
+  {
+    "image_url": "",
+    "title": "Deep Learning using TensorFlow",
+    "course_link": "",
+    "issuer": "IBM",
+    "issued_date": "Nov 2020",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "IBM Blockchain Foundation Developer V2",
+    "course_link": "",
+    "issuer": "IBM",
+    "issued_date": "Nov 2020",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "IBM Cybersecurity Analyst Specialization",
+    "course_link": "https://www.coursera.org/account/accomplishments/specialization/certificate/4WURRWGMT49K",
+    "issuer": "IBM",
+    "issued_date": "Nov 2020 Credential ID 4WURRWGMT49K",
+    "credential": "4WURRWGMT49K"
+  },
+  {
+    "image_url": "",
+    "title": "Scala Programming for Data Science - Level 2",
+    "course_link": "",
+    "issuer": "IBM",
+    "issued_date": "Nov 2020",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "Advanced Google Analytics",
+    "course_link": "",
+    "issuer": "Google Analytics for Business",
+    "issued_date": "Nov 2020 · Expires Nov 2023",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "Machine Learning",
+    "course_link": "https://www.coursera.org/account/accomplishments/certificate/6N7NQJ2MG6FF",
+    "issuer": "Stanford University",
+    "issued_date": "Oct 2020 Credential ID 6N7NQJ2MG6FF",
+    "credential": "6N7NQJ2MG6FF"
+  },
+  {
+    "image_url": "",
+    "title": "Cloud Architecture with Google Cloud Specialization",
+    "course_link": "https://www.coursera.org/account/accomplishments/specialization/certificate/JHL9JF3WQ7QY",
+    "issuer": "Google Cloud (NJ)",
+    "issued_date": "Oct 2020 Credential ID JHL9JF3WQ7QY",
+    "credential": "JHL9JF3WQ7QY"
+  },
+  {
+    "image_url": "",
+    "title": "Cloud Engineering with Google Cloud Specialization",
+    "course_link": "https://www.coursera.org/account/accomplishments/specialization/certificate/LM6LTD99ST3L",
+    "issuer": "Google Cloud (NJ)",
+    "issued_date": "Oct 2020 Credential ID LM6LTD99ST3L",
+    "credential": "LM6LTD99ST3L"
+  },
+  {
+    "image_url": "",
+    "title": "Data Engineering with Google Cloud Specialization",
+    "course_link": "https://www.coursera.org/account/accomplishments/specialization/certificate/7K8WUNYLW5TT",
+    "issuer": "Google Cloud (NJ)",
+    "issued_date": "Oct 2020 Credential ID 7K8WUNYLW5TT",
+    "credential": "7K8WUNYLW5TT"
+  },
+  {
+    "image_url": "",
+    "title": "Deep Learning Specialization",
+    "course_link": "https://www.coursera.org/account/accomplishments/specialization/certificate/49NHBJJ8DE2Z",
+    "issuer": "DeepLearning.AI",
+    "issued_date": "Oct 2020 Credential ID 49NHBJJ8DE2Z",
+    "credential": "49NHBJJ8DE2Z"
+  },
+  {
+    "image_url": "",
+    "title": "Astro 101: Black Holes",
+    "course_link": "https://www.coursera.org/account/accomplishments/certificate/PSRUEBLG8BU8",
+    "issuer": "University of Alberta",
+    "issued_date": "Sep 2020 Credential ID PSRUEBLG8BU8",
+    "credential": "PSRUEBLG8BU8"
+  },
+  {
+    "image_url": "",
+    "title": "Google IT Automation with Python Specialization",
+    "course_link": "https://www.coursera.org/account/accomplishments/specialization/certificate/439U2DRG7CBJ",
+    "issuer": "Google",
+    "issued_date": "Sep 2020 Credential ID 439U2DRG7CBJ",
+    "credential": "439U2DRG7CBJ"
+  },
+  {
+    "image_url": "",
+    "title": "IT Fundamentals for Cybersecurity Specialization",
+    "course_link": "https://www.coursera.org/account/accomplishments/specialization/certificate/W3SLS7WNDW68",
+    "issuer": "IBM",
+    "issued_date": "Sep 2020 Credential ID W3SLS7WNDW68",
+    "credential": "W3SLS7WNDW68"
+  },
+  {
+    "image_url": "",
+    "title": "Security Analyst Fundamentals Specialization",
+    "course_link": "https://www.coursera.org/account/accomplishments/specialization/certificate/X4P3NHJMT9BF",
+    "issuer": "IBM",
+    "issued_date": "Sep 2020 Credential ID X4P3NHJMT9BF",
+    "credential": "X4P3NHJMT9BF"
+  },
+  {
+    "image_url": "",
+    "title": "C for Everyone: Structured Programming (with Honors)",
+    "course_link": "https://www.coursera.org/account/accomplishments/certificate/5DVLX6AYE7LL",
+    "issuer": "University of California, Santa Cruz",
+    "issued_date": "Sep 2020 Credential ID 5DVLX6AYE7LL",
+    "credential": "5DVLX6AYE7LL"
+  },
+  {
+    "image_url": "",
+    "title": "Coding for Everyone: C and C++ Specialization",
+    "course_link": "https://www.coursera.org/account/accomplishments/specialization/certificate/Y65ZD2M7KMVB",
+    "issuer": "University of California, Santa Cruz",
+    "issued_date": "Sep 2020 Credential ID Y65ZD2M7KMVB",
+    "credential": "Y65ZD2M7KMVB"
+  },
+  {
+    "image_url": "",
+    "title": "Google IT Automation Professional Certificate",
+    "course_link": "",
+    "issuer": "Google",
+    "issued_date": "Sep 2020",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "Google IT Support Professional Certificate",
+    "course_link": "",
+    "issuer": "Google",
+    "issued_date": "Sep 2020",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "Google IT Support Specialization",
+    "course_link": "https://www.coursera.org/account/accomplishments/specialization/certificate/EQLV3SWATCAL",
+    "issuer": "Google",
+    "issued_date": "Sep 2020 Credential ID EQLV3SWATCAL",
+    "credential": "EQLV3SWATCAL"
+  },
+  {
+    "image_url": "",
+    "title": "AP Scholar with Honor",
+    "course_link": "",
+    "issuer": "The College Board",
+    "issued_date": "Jul 2020",
+    "credential": ""
+  },
+  {
+    "image_url": "",
+    "title": "AP Scholar",
+    "course_link": "",
+    "issuer": "The College Board",
+    "issued_date": "Jul 2019",
+    "credential": ""
+  }
+],
   "languages": [
     {
       "name": "English",
@@ -1503,4 +1927,5 @@
       "link": null
     }
   ]
+
 }
